@@ -1,4 +1,4 @@
-# ![Persona Name](ricardo.gif)  
+# ![Persona Name](persona1.jpeg)  
 **Name:** [Persona Name]  
 **Age:** [Persona Age]  
 **Occupation:** [Job Title or Role]  
