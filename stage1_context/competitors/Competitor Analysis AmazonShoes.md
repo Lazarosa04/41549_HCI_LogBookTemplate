@@ -1,22 +1,22 @@
 # Competitor Analysis: [System Name] 
 ## General Information 
-- **Name of System:** [System Name] 
-- **Company/Developer:** [Company Name] 
-- **Website/Product Page:** [URL] 
-- **Version/Release Date:** [If applicable] 
-- **Platform(s) Supported:** [e.g., Web, Mobile (iOS/Android), Desktop] 
-- **Target Audience:** [Who is this designed for?] 
+- **Name of System:** PobreTV
+- **Company/Developer:** -----
+- **Website/Product Page:** [https://freeforyou.site/pobretv/] 
+- **Version/Release Date:** 2021
+- **Platform(s) Supported:** Web
+- **Target Audience:** [pessoas que queiram ver filmes e séries sem pagar]
 
 --- 
 ## Core Functionality 
 
-**Primary Purpose:** [Briefly describe what the system is designed to do] 
+**Primary Purpose:** [Poder pesquisar e assistir filmes e séries]
 
-**Key Features:** - [Feature 1] - [Feature 2] - [Feature 3] 
+**Key Features:** - [pesquisa de filmes/séries] - [ver detalhes do silme/série (sinopse, avaliação)] - [adicionar aos favoritos e lista de favoritos] 
 
-**Unique Selling Points (USPs):** - [What makes this system stand out?] 
+**Unique Selling Points (USPs):** - [conteudo gratuito, poder armazenar a uma lista de favoritos sem criar conta] 
 
-**Limitations/Weaknesses:** - [Any known shortcomings or pain points] 
+**Limitations/Weaknesses:** - [lista de favoritos pouco visivel, botão de favoritos pequeno, sugestão pouco relevantes quando não há resultados] 
 
 ---
 
