@@ -22,15 +22,15 @@
 
 ## Screenshots
 ![inicio!](inicio.png "AnImage")
-> No inicio aparece mostanha russa com os filmes mais recentes, podesse ver barra de pesquisa com filtros em cima
+> Ao acessar o site, a primeira coisa que se vê é uma seção em formato de "montanha-russa" destacando os filmes mais recentes. No topo da página, está disponível uma barra de pesquisa com filtros para facilitar a navegação pelos conteúdos.
 
 ![sugestions!](sugestions.png "AnImage")
-> Já em vai ainda na 1a página html aparecem mais sugestões e últimos filmes e séries
+> Ainda na primeira página, logo abaixo da seção inicial, aparecem sugestões adicionais de filmes e séries, incluindo os lançamentos mais recentes. Essa seção expande as opções disponíveis para o utilizador sem precisar de sair da página principal.
 
 ![movie!](movie.png "AnImage")
-> Quando selecionamos um filme podemos reparar na pequena opção de favoritos...
+> Ao selecionar um filme, o utilizador é levado para a página com os detalhes desse título. Dentro dessa página, a opção para adicionar o filme aos favoritos está meio que pouco visível.
 
 ![favoritos!](favoritos.png "AnImage")
-> No final da página pode se ver que da para voltar atras para filmes , séries ou ver a lista de favoritos (muito mal posicionado)
+> No final da página, existe a possibilidade de voltar para a seção de filmes, séries ou acessar a lista de favoritos. No entanto, esta opção está posicionada de forma pouco intuitiva, tornando seu acesso pouco prático para o utilizador.
 
 ## Online Reviews
