@@ -21,6 +21,16 @@
 ---
 
 ## Screenshots
+![inicio!](inicio.png "AnImage")
+> No inicio aparece mostanha russa com os filmes mais recentes, podesse ver barra de pesquisa com filtros em cima
 
+![sugestions!](sugestions.png "AnImage")
+> Já em vai ainda na 1a página html aparecem mais sugestões e últimos filmes e séries
+
+![movie!](movie.png "AnImage")
+> Quando selecionamos um filme podemos reparar na pequena opção de favoritos...
+
+![favoritos!](favoritos.png "AnImage")
+> No final da página pode se ver que da para voltar atras para filmes , séries ou ver a lista de favoritos (muito mal posicionado)
 
 ## Online Reviews
