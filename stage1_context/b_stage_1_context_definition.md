@@ -14,8 +14,9 @@
 
 | **Competitor**    | **Description**                             | Information repository              |
 | ----------------- | ------------------------------------------- | ----------------------------------- |
-| [Amazon Shoes]    | [Online platform selling shoe laces]        | [[Competitor Analysis AmazonShoes]] |
-| [Fnac Atacadores] | [Smartphone app to buy and sell shoe laces] |                                     |
+| PobreTV		    | Site promedio para ver filmes e series	  |
+					|	 de forma gratuita						  |
+| 					|      		                                  |
 | ...               |                                             |                                     |
 
 
@@ -23,12 +24,16 @@
 
 ## B.1b. Detailed Competitor Analysis
 >	Choose the most notable competitor and do a more thorough analysis of their interactive solution
-
+PobreTV fornece muitas funcionalidades presentes em muitos sites do estilo, como poder visualizar quais os conteudos disponíveis, butões para ações do utilizador mais usadas, diferentes opções para ver o mesmo video,
+etc. Um dos aspetos que nos chamou a atenção em particular é porque é muito utilizado por pessoas à volta de
+alguns dos membros da equipa e porque tem a opção de adiciona filmes aos favoritos sem ser necessária a criação duma conta. 
 
 ### - Heuristic Evaluation
 
 #### Method
 [ Describe the method used for the heuristic evaluation: procedure, number of experts, heuristics, severity scale considered, how was consensus done.]
+Cada um dos membros da equipa (3) utilizou e testou diferentes ações no site em si para cada um ter uma noção. Depois utilizamos os criterios de  ("10 Usability Heuristics for User Interface Design" by Jakob Nielsen) a medida que íamos utilizando o site, para cada criterio procuramos possíveis melhorias do mesmo e falta de possíveis funcionalidades úteis para o utilizador.
+Depois de identificar estes problemas ou possíveis melhorias usamos e aplicamos uma escala de severidade a cada um deles. De 0 a 4, sendo 0 considerado não importante ou nem sequer é um problema de usabilidade e 4 sendo um problema de usabilidade catastrófico.
 
 
 #### Individual Evaluations
@@ -47,8 +52,43 @@
 
 >	After the individual analysis by each expert, all results should be gathered in a consensus table. If an expert has not found any of the problems found by other experts, they should analyse it, at this point, and give it a severity.
 
-| **Issue**       | **Expert 1** | Expert 2 | Expert 3 | Recommendations                             |
-| --------------- | ------------ | -------- | -------- | ------------------------------------------- |
+| **Issue**       | **Ruben Costa** | Carlos Verenzuela | Lázaro Sá | Recommendations                             |
+| --------------- | --------------- | ----------------- | --------- | ------------------------------------------- |
+| Não há um 		|							
+indicador claro de	|
+buffering (pode		|
+demorar tempo e		|							2
+o utilizador		|
+não saber)			|
+ _________________________________________________________________________________________________________________
+Algumas traduções	|
+ automáticas podem 	|							2
+ causar confusão	|
+  _________________________________________________________________________________________________________________
+ Faltam botões que 	|
+facilitem a ações 	|
+mais comuns para o	|
+utilizador, como	|							4
+ativar modo escuro,	|
+um botão para voltar|
+ ao topo, trocar 	|
+ de episodios, etc.	|
+ _________________________________________________________________________________________________________________
+ Muitos links levam	|
+a páginas quebradas	|							3
+ou sites suspeitos	|
+_________________________________________________________________________________________________________________
+Não há opção para	|
+baixar para ver 	|
+depois				|							4
+__________________________________________________________________________________________________________________
+Falta suporte ao 	|
+usuário para 		|
+problemas mais 		|							3
+complexos			|
+___________________________________________________________________________________________________________________
+
+
 | Something wrong | 3            | 1        | 0        | Something could be done to the button to... |
 | Another thing   | 4            | 3        | 4        | Other thing to recommend                    |
 | ...             |              |          |          |                                             |
