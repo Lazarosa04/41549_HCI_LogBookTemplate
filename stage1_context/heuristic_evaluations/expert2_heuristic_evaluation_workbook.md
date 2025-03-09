@@ -17,7 +17,7 @@ Summary of each usability heuristic: [here](https://media.nngroup.com/media/arti
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Não há um indicador claro de buffering (pode demorar tempo e o utilizador não saber) | 3            |                |
+| Não há um indicador claro de buffering (pode demorar tempo e o utilizador não saber) |2            |                |
 |    |             |                |
 
 # 2 Match Between System and The Real World
@@ -27,7 +27,7 @@ Summary of each usability heuristic: [here](https://media.nngroup.com/media/arti
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Algumas traduções automáticas podem causar confusão | 3            |                |
+| Algumas traduções automáticas podem causar confusão | 2            |                |
 |    |             |                |
 
 # 3 User Control and Freedom
@@ -50,7 +50,7 @@ como ativar modo escuro, um botão para voltar ao topo, trocar de episodios, etc
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Something wrong | 3            |                |
+|  |             |                |
 |    |             |                |
 # 5 Error Prevention
 >	Good error messages are important, but the best designs carefully prevent problems from occurring in the first place. Either eliminate error-prone conditions, or check for them and present users with a confirmation option before they commit to the action. 
@@ -59,7 +59,7 @@ como ativar modo escuro, um botão para voltar ao topo, trocar de episodios, etc
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Muitos links levam a páginas quebradas ou sites suspeitos | 4           |                |
+| Muitos links levam a páginas quebradas ou sites suspeitos | 3           |                |
 |    |             |                |
 # 6 Recognition Rather than Recall
 >	Minimize the user's memory load by making elements, actions, and options visible. The user should not have to remember information from one part of the interface to another. Information required to use the design (e.g. field labels or menu items) should be visible or easily retrievable when needed. 
@@ -77,7 +77,7 @@ como ativar modo escuro, um botão para voltar ao topo, trocar de episodios, etc
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Something wrong | 3            |                |
+|  |             |                |
 |    |             |                |
 # 8 Aesthetic and Minimalist Design
 >	Interfaces should not contain information that is irrelevant or rarely needed. Every extra unit of information in an interface competes with the relevant units of information and diminishes their relative visibility. 
@@ -86,7 +86,7 @@ como ativar modo escuro, um botão para voltar ao topo, trocar de episodios, etc
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Something wrong | 3            |                |
+|  |             |                |
 |    |             |                |
 # 9 Help Users Recognize, Diagnose, and Recover from Errors
 >	Error messages should be expressed in plain language (no error codes), precisely indicate the problem, and constructively suggest a solution. 
@@ -95,7 +95,7 @@ como ativar modo escuro, um botão para voltar ao topo, trocar de episodios, etc
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Something wrong | 3            |                |
+|  |             |                |
 |   |             |                |
 
 # 10 Help and Documentation
@@ -105,5 +105,5 @@ como ativar modo escuro, um botão para voltar ao topo, trocar de episodios, etc
 
 | **Issue**       | **Severity** | Recommendation |
 | --------------- | ------------ | -------------- |
-| Falta suporte ao usuário para problemas mais complexos | 4            |                |
+| Falta suporte ao usuário para problemas mais complexos | 3            |                |
 |    |             |                |

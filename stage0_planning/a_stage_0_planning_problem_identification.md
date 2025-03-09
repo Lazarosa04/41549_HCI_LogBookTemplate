@@ -5,9 +5,14 @@
 
 # A. Stage 0 - Planning and Problem Identification
 >	Here you will briefly explain the domain of the problem you identified, briefly identify general challenges and, then, state you problem
+<<<<<<< HEAD
 
 >   O domínio do problema é o consumo de meios audiovisuais, nomeadamente filmes e séries.
 Pensamos em qual a melhor forma das pessoas usufruirem das mesmas. 
+=======
+O domínio do problema é o consumo de meios audiovisuais, nomeadamente filmes e séries.
+Pensamos em qual a melhor forma das pessoas usufruirem dos mesmos. 
+>>>>>>> 961c14786654aacbcd08d5aa592645a1800bce83
 Reparamos que muitas das aplicações ou sites web que visam satisfazer o usuário não o fazem em todos os aspetos.
 
 # Context
