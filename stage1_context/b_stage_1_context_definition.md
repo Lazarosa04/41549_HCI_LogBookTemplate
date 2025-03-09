@@ -63,16 +63,46 @@ Depois de identificar estes problemas ou possíveis melhorias usamos e aplicamos
 
 >	After the individual analysis by each expert, all results should be gathered in a consensus table. If an expert has not found any of the problems found by other experts, they should analyse it, at this point, and give it a severity.
 
-| **Issue** | **Rúben** | **Expert 2** | **Expert 3** | **Recommendations** |
-|-----------|------------|------------|------------|-------------------|
-| Quando não há resultados, aparece mensagem genérica ou sugestões aleatórias | 2 |  |  | Melhorar sugestões para conteúdos mais relevantes |
-| Botão de favoritos muito pequeno e escondido | 2 |  |  | Aumentar o tamanho e destacar o botão de favoritos |
-| Lista de favoritos escondida | 3 |  |  | Melhorar a visibilidade e o acesso à lista de favoritos |
-
+| **Issue**                         | **Rúben** | **Carlos**  | **Expert 3**  | **Recommendations** |
+|-----------------------------------|-----------|------------ |-------------- |---------------------|
+| Quando não há resultados, aparece |           |             |               |
+ mensagem genérica ou sugestões     |     2     |     2       |               |
+  aleatórias                        |           |             |               | Melhorar sugestões para conteúdos mais relevantes |
+------------------------------------------------------------------------------------------------------
+| Botão de favoritos muito pequeno  |           |             |               |
+e escondido                         |     2     |     3       |               | Aumentar o tamanho e destacar o botão de favoritos |
+------------------------------------------------------------------------------------------------------
+| Lista de favoritos escondida      |     3     |     3       |               | Melhorar a visibilidade e o acesso à lista de favoritos |
+----------------------------------------------------------------------------------------------------
+Não há um indicador claro de        |           |             |               |
+buffering (pode demorar tempo e o   |           |      2      |               |Adicionar uma estimativa de tempo, pelo menos nos casos que se sabe que vai demorar devida a falta de rede   
+utilizador não saber)               |           |             |               |
+----------------------------------- ------------------------------------------------------------------
+Algumas traduções automáticas       |           |             |               |Fazer um review das traduções
+podem causar confusão               |           |      2      |               |
+------------------------------------------------------------------------------------------------------
+Faltam botões que facilitem a ações |           |             |               |Adicionar tais botões
+mais comuns para o utilizador,      |           |             |               |
+como ativar modo escuro, um botão   |           |     4       |               |
+para voltar ao topo,                |           |             |               |
+ trocar de episodios, etc.          |           |             |               |
+ ------------------------------------------------------------------------------------------------------
+ Muitos links levam a páginas       |           |     3       |               |Identificar quando um filme está indisponível, com uma espécie de flag.
+ quebradas ou sites suspeitos       |           |             |               |
+------------------------------------------------------------------------------------------------------
+Não há opção para baixar para       |           |     4       |               |Adicionar a opção de poder baixar video
+ ver depois                         |           |             |               |
+ ------------------------------------------------------------------------------------------------------
+Falta suporte ao usuário para       |           |     3       |               |Criar um link onde os utilizadores poderiam mandar mail aos criadores da pagina ou ao helpdesk.
+problemas mais complexos            |           |             |               |Ou então um link ao forum onde possam perguntar e as outras pessoas tentariam ajudar.
 
 
 ---
 ### - Cognitive Walkthrough
+-Pesquisar filme/serie
+-Identificar filme/serie
+-Selecionar o mesmo
+-Reproduzir
 
 #### Method
 [Briefly described  the method you used for the Cognitive Walkthrough analysis. ]
