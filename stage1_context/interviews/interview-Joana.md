@@ -17,29 +17,29 @@
 - PC, TV
 
 **Que plataforma se streaming utilizas ? -> concorrência** 
--Netflix, site pirata
+- stremio(pc) e Hollywood (tv)
 
 
 **Que mais te irrita ao pesquisar por série/filme ? (dificuldades na pesquisa)?** 
-- Titulo so em 1 lingua, pesquisa NÃO por partes, não haver legendas
+- filmes em línguas que nng entende
 
 **Que influencia a tua escolha ? (sinopse, trailer, recomendações, avaliação)?** 
-- : Trailer+-, avaliações, sinopse
+- trailer e sinopse
 
 **Há algo que mudarias na plataforma que usas ? Se sim, o que ?** 
-- Não sabe
+- Não ter categorias todas, categorias é muito genérico (mais visto)
 
 **Gostavas que houvesse mais opções de personalização ?** 
-- Sim, ter opção de continuar a ver 
+- SIM
 
 **As recomendações recebidas pela plataforma costumam parecer utéis ou aleatórias ?** 
--  Genéricas
+-  uteis
 
 **Gostarias de ter funcionalidades extra, como pesquisa por voz ou modo de navegação diferente ?** 
-- Não, um pouco chato (pesquisa de voz)
+- mostrar musicas/info dos atores do filme ou serie de lado.
 
 **Preferes explorar categorias personalizadas ou pesquisar diretamente o que queres ver ?**
--categorias
+-procuro diretamente
 
 --- 
 ## Additional Observations 

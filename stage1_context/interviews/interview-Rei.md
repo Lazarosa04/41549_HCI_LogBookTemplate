@@ -14,32 +14,32 @@
 [Ver filme/serie] 
 
 **Onde costumas assistir filmes/séries/animes ? (PC, tlm, TV, tablet)** 
-- PC, TV
+- PC
 
 **Que plataforma se streaming utilizas ? -> concorrência** 
--Netflix, site pirata
+- stremio (pirata)
 
 
 **Que mais te irrita ao pesquisar por série/filme ? (dificuldades na pesquisa)?** 
-- Titulo so em 1 lingua, pesquisa NÃO por partes, não haver legendas
+- não ter o movie
 
 **Que influencia a tua escolha ? (sinopse, trailer, recomendações, avaliação)?** 
-- : Trailer+-, avaliações, sinopse
+- recomendação de alguém
 
 **Há algo que mudarias na plataforma que usas ? Se sim, o que ?** 
-- Não sabe
+- Não
 
 **Gostavas que houvesse mais opções de personalização ?** 
-- Sim, ter opção de continuar a ver 
+- Não
 
 **As recomendações recebidas pela plataforma costumam parecer utéis ou aleatórias ?** 
--  Genéricas
+-  Ignoro
 
 **Gostarias de ter funcionalidades extra, como pesquisa por voz ou modo de navegação diferente ?** 
-- Não, um pouco chato (pesquisa de voz)
+- Não
 
 **Preferes explorar categorias personalizadas ou pesquisar diretamente o que queres ver ?**
--categorias
+- pesquisar diretamente
 
 --- 
 ## Additional Observations 
