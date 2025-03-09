@@ -1,4 +1,4 @@
-# Competitor Analysis: [System Name] 
+# Competitor Analysis: [PobreTV] 
 ## General Information 
 - **Name of System:** PobreTV
 - **Company/Developer:** -----

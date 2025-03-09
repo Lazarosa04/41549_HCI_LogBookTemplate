@@ -4,7 +4,7 @@
 
 ## Interview Details 
 - **Date:** [2025-02-27] 
-- **Interviewer:** [Carlos Verenzuela] 
+- **Interviewer:** [Carlos, Rúben, Lázaro] 
 - **Participant:** [Optional: Anonymous or Role] 
 - **Context:** [Where and how the interview was conducted] 
 - --- 
@@ -21,13 +21,13 @@
 
 
 **Que mais te irrita ao pesquisar por série/filme ? (dificuldades na pesquisa)?** 
-- filmes em línguas que nng entende
+- filmes em línguas que ninguém entende
 
 **Que influencia a tua escolha ? (sinopse, trailer, recomendações, avaliação)?** 
 - trailer e sinopse
 
 **Há algo que mudarias na plataforma que usas ? Se sim, o que ?** 
-- Não ter categorias todas, categorias é muito genérico (mais visto)
+- Não ter categorias todas, e as categorias são muito genérico (mais visto)
 
 **Gostavas que houvesse mais opções de personalização ?** 
 - SIM
@@ -36,7 +36,7 @@
 -  uteis
 
 **Gostarias de ter funcionalidades extra, como pesquisa por voz ou modo de navegação diferente ?** 
-- mostrar musicas/info dos atores do filme ou serie de lado.
+- mostrar musicas/info dos atores do filme/série de lado.
 
 **Preferes explorar categorias personalizadas ou pesquisar diretamente o que queres ver ?**
 -procuro diretamente

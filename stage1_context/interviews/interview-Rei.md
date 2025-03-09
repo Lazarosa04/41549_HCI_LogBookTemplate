@@ -4,7 +4,7 @@
 
 ## Interview Details 
 - **Date:** [2025-02-27] 
-- **Interviewer:** [Carlos Verenzuela] 
+- **Interviewer:** [Carlos, Rúben, Lázaro]
 - **Participant:** [Optional: Anonymous or Role] 
 - **Context:** [Where and how the interview was conducted] 
 - --- 
@@ -21,7 +21,7 @@
 
 
 **Que mais te irrita ao pesquisar por série/filme ? (dificuldades na pesquisa)?** 
-- não ter o movie
+- não ter o filme que queria ver
 
 **Que influencia a tua escolha ? (sinopse, trailer, recomendações, avaliação)?** 
 - recomendação de alguém
