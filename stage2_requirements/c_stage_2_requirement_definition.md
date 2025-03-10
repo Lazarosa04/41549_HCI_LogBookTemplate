@@ -9,38 +9,51 @@
 
 # Personas
 
-## Persona: [Persona Name] 
+## Persona: [João Pinedo] 
 ### Summary 
 | Attribute        | Details                                       |
 | ---------------- | --------------------------------------------- |
 | **Photo**        | ![Persona Name\|100](personas/persona1.jpeg)  |
-| **Name**         | [Persona Name]                                |
-| **Age**          | [Persona Age]                                 |
-| **Occupation**   | [Job Title or Role]                           |
-| **Location**     | [City, Country]                               |
+| **Name**         | [João Pinedo]                                |
+| **Age**          | [40]                                 |
+| **Occupation**   | [Contabilista]                           |
+| **Location**     | [Évora, Portugal]                               |
 | **Goals**        | [Brief summary of their main goals]           |
 | **Pain Points**  | [Key frustrations or challenges]              |
 | **Motivation**   | [One-line motivation or quote]                |
 | **Full Profile** | [📄 Read More](personas/persona1_template.md) |
 
 ---
-## Persona: [Persona Name] 
+## Persona: [Maria Lopes] 
 ### Summary 
 | Attribute        | Details                                       |
 | ---------------- | --------------------------------------------- |
-| **Photo**        | ![Persona Name](path/to/photo.jpg)            |
-| **Name**         | [Persona Name]                                |
-| **Age**          | [Persona Age]                                 |
-| **Occupation**   | [Job Title or Role]                           |
-| **Location**     | [City, Country]                               |
+| **Photo**        | ![Persona Name](personas/persona2.jpg)            |
+| **Name**         | [Maria Lopes]                                |
+| **Age**          | [19]                                 |
+| **Occupation**   | [Estudante universitara]                           |
+| **Location**     | [Braga, Portugal]                               |
 | **Goals**        | [Brief summary of their main goals]           |
 | **Pain Points**  | [Key frustrations or challenges]              |
 | **Motivation**   | [One-line motivation or quote]                |
 | **Full Profile** | [📄 Read More](personas/persona2_template.md) |
 
 ---
+## Persona: [Gonçalo Ferreira] 
+### Summary 
+| Attribute        | Details                                       |
+| ---------------- | --------------------------------------------- |
+| **Photo**        | ![Persona Name](personas/persona3.jpg)            |
+| **Name**         | [Maria Lopes]                                |
+| **Age**          | [27]                                 |
+| **Occupation**   | [Engenheiro de Software]                           |
+| **Location**     | [Porto, Portugal]                               |
+| **Goals**        | [Brief summary of their main goals]           |
+| **Pain Points**  | [Key frustrations or challenges]              |
+| **Motivation**   | [One-line motivation or quote]                |
+| **Full Profile** | [📄 Read More](personas/persona2_template.md) |
 
-
+---
 
 
 
