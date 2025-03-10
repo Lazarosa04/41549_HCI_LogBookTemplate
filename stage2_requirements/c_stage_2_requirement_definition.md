@@ -18,9 +18,9 @@
 | **Age**          | [40]                                 |
 | **Occupation**   | [Contabilista]                           |
 | **Location**     | [Évora, Portugal]                               |
-| **Goals**        | [Brief summary of their main goals]           |
-| **Pain Points**  | [Key frustrations or challenges]              |
-| **Motivation**   | [One-line motivation or quote]                |
+| **Goals**        | [Quer encontrar filmes e series de forma eficiente e com boas recomendações]           |
+| **Pain Points**  | [Perder tempo a procura de bom conteudo ou quando a ordem de exibição não faz sentido ou é irrelevante]              |
+| **Motivation**   | [Depois de um dia cansativo, só quero relaxar e ver algo que realmente valha a pena.]                |
 | **Full Profile** | [📄 Read More](personas/persona1_template.md) |
 
 ---
@@ -33,9 +33,9 @@
 | **Age**          | [19]                                 |
 | **Occupation**   | [Estudante universitara]                           |
 | **Location**     | [Braga, Portugal]                               |
-| **Goals**        | [Brief summary of their main goals]           |
-| **Pain Points**  | [Key frustrations or challenges]              |
-| **Motivation**   | [One-line motivation or quote]                |
+| **Goals**        | [Encontrar facilmente seus animes favoritos]           |
+| **Pain Points**  | [Não encontrar animes dublados ou pesquisa não retorna resultados relevantes.]              |
+| **Motivation**   | [Quero um lugar onde possa encontrar e comentar meus animes favoritos sem complicação.]                |
 | **Full Profile** | [📄 Read More](personas/persona2_template.md) |
 
 ---
@@ -48,9 +48,9 @@
 | **Age**          | [27]                                 |
 | **Occupation**   | [Engenheiro de Software]                           |
 | **Location**     | [Porto, Portugal]                               |
-| **Goals**        | [Brief summary of their main goals]           |
-| **Pain Points**  | [Key frustrations or challenges]              |
-| **Motivation**   | [One-line motivation or quote]                |
+| **Goals**        | [Acesso rápido aos filmes e séries mais recentes e a opção de download.]           |
+| **Pain Points**  | [Não encontrar facilmente os lançamentos ou quando o site não permite baixar os vídeos.]              |
+| **Motivation**   | [Quero escolher rapidamente o que ver e garantir que possa ver o que quiser sem depender da internet.]                |
 | **Full Profile** | [📄 Read More](personas/persona2_template.md) |
 
 ---
