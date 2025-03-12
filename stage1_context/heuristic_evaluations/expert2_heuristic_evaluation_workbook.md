@@ -3,7 +3,7 @@ Nielsen Norman Group available at: https://media.nngroup.com/media/articles/atta
 -->
 
 **Evaluator**: [Carlos Verenzuela]
-**Date**: [2025-03-06]
+**Date**: [03-06-2025]
 **Product**: [PobreTV]
 
 
