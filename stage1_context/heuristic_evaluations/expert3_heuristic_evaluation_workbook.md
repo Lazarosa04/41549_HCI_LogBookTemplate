@@ -2,7 +2,7 @@
 Nielsen Norman Group available at: https://media.nngroup.com/media/articles/attachments/Heuristic_Evaluation_Workbook_-_Nielsen_Norman_Group.pdf
 -->
 
-**Evaluator**: [Evaluator Name]
+**Evaluator**: [Lázaro Sá]
 **Date**: [10-03-2025]
 **Product**: [Stremio]
 
