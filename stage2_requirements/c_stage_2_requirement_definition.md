@@ -18,10 +18,10 @@
 | **Age**          | [40]                                 |
 | **Occupation**   | [Contabilista]                           |
 | **Location**     | [Évora, Portugal]                               |
-| **Goals**        | [Quer encontrar filmes e series de forma eficiente e com boas recomendações]           |
-| **Pain Points**  | [Perder tempo a procura de bom conteudo ou quando a ordem de exibição não faz sentido ou é irrelevante]              |
-| **Motivation**   | [Depois de um dia cansativo, só quero relaxar e ver algo que realmente valha a pena.]                |
-| **Full Profile** | [📄 Read More](personas/persona1_template.md) |
+| **Goals**        | [Encontrar filmes e séries de forma eficiente com boas recomendações.]           |
+| **Pain Points**  | [Perder tempo a procurar bom conteúdo ou quando a ordem de exibição não faz sentido.]              |
+| **Motivation**   | ["Depois de um dia cansativo, só quero relaxar e ver algo que realmente valha a pena."]                |
+| **Full Profile** | [📄 Read More](personas/persona1.md) |
 
 ---
 ## Persona: [Maria Lopes] 
@@ -33,10 +33,10 @@
 | **Age**          | [19]                                 |
 | **Occupation**   | [Estudante universitara]                           |
 | **Location**     | [Braga, Portugal]                               |
-| **Goals**        | [Encontrar facilmente seus animes favoritos]           |
-| **Pain Points**  | [Não encontrar animes dublados ou pesquisa não retorna resultados relevantes.]              |
-| **Motivation**   | [Quero um lugar onde possa encontrar e comentar meus animes favoritos sem complicação.]                |
-| **Full Profile** | [📄 Read More](personas/persona2_template.md) |
+| **Goals**        | [Descobrir e acompanhar animes populares baseados em rankings e avaliações.]           |
+| **Pain Points**  | [Dificuldade em encontrar animes bem avaliados ou recomendações personalizadas.]              |
+| **Motivation**   | ["Quero um lugar onde possa descobrir animes incríveis e conversar sobre eles com a comunidade."]                |
+| **Full Profile** | [📄 Read More](personas/persona2.md) |
 
 ---
 ## Persona: [Gonçalo Ferreira] 
@@ -44,14 +44,14 @@
 | Attribute        | Details                                       |
 | ---------------- | --------------------------------------------- |
 | **Photo**        | ![Persona Name](personas/persona3.jpg)            |
-| **Name**         | [Maria Lopes]                                |
+| **Name**         | [Gonçalo Ferreira]                                |
 | **Age**          | [27]                                 |
 | **Occupation**   | [Engenheiro de Software]                           |
 | **Location**     | [Porto, Portugal]                               |
-| **Goals**        | [Acesso rápido aos filmes e séries mais recentes e a opção de download.]           |
-| **Pain Points**  | [Não encontrar facilmente os lançamentos ou quando o site não permite baixar os vídeos.]              |
-| **Motivation**   | [Quero escolher rapidamente o que ver e garantir que possa ver o que quiser sem depender da internet.]                |
-| **Full Profile** | [📄 Read More](personas/persona2_template.md) |
+| **Goals**        | [Encontrar filmes para assistir com a família e amigos, garantindo que todos aproveitem.]           |
+| **Pain Points**  | [Dificuldade em escolher filmes que agradem a diferentes idades e gostos.]              |
+| **Motivation**   | ["Quero aproveitar o tempo com a minha família e amigos assistindo a bons filmes sem perder tempo escolhendo."]                |
+| **Full Profile** | [📄 Read More](personas/persona3.md) |
 
 ---
 
