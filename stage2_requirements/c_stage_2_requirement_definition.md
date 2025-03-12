@@ -60,15 +60,23 @@
 # Scenarios
 
 
-## Scenario 1: Maria goes on a Museum Tour
+## Scenario 1: João procura uma nova série para ver
 
-[Maria had always loved modern art, but she often found museum visits overwhelming—so many exhibits, so much information, and little guidance on where to start. Today, she was visiting a contemporary art museum that had recently introduced an **interactive guide**.  ]
+[Depois de um longo dia de trabalho, o João desliga o computador do escritório e senta-se no sofá. Quer relaxar e encontrar algo interessante para ver, mas não tem paciência para perder tempo a navegar por catálogos intermináveis de filmes e séries.]
 
-[As she entered the museum, Maria received a notification on her phone, reminding her to launch the app. She opened it and was greeted with a personalized welcome screen. The system, aware of her general interests in **digital media and abstract art**, suggested a self-guided tour tailored to her preferences.  ]
+[Abrindo o site de streaming no seu PC, é imediatamente recebido com sugestões baseadas nos seus gostos anteriores. No topo da página, vê uma secção com “Recomendações para ti”, onde aparece uma nova série épica com boas avaliações no IMDb.]
 
-[Curious, Maria followed the suggested path. As she approached the first painting, the guide vibrated slightly—a prompt that additional content was available. Holding up the guide, she saw an **overlay** appear on the screen, revealing a time-lapse animation of the artist creating the piece. A small **audio clip** played, explaining the artist’s thought process and influences. Maria found this fascinating; it was as if the artwork was coming to life in front of her.  ]
+[Curioso, clica na sugestão e abre a página da série. O site apresenta um pequeno resumo ou sinopse, a classificação IMDb e um vídeo de pré-visualização. Além disso, uma secção “Se gostaste de Game of Thrones, talvez gostes de...” sugere títulos semelhantes.]
 
-[As she continued her tour, Maria **bookmarked** her favorite pieces, leaving notes about what she found intriguing. The system, recognizing her engagement, suggested another exhibit nearby featuring similar themes. Midway through her visit, she received a pop-up asking if she’d like a **short quiz** on the artworks she had explored, offering an interactive way to reflect on what she had learned.  ]
+[Ainda indeciso, o João consulta rapidamente os comentários da comunidade. Ao ver que muitos espectadores elogiaram a série pelo enredo envolvente e pela qualidade da produção, decide dar-lhe uma oportunidade. Com apenas um clique, começa a ver o primeiro episódio, satisfeito por ter encontrado algo interessante sem esforço.]
+
+## Scenario 2: Maria encontra um anime nos seus favoritos e personaliza a experiência
+[Já passa das 23h e a Maria está deitada na cama com o telemóvel na mão. Quer ver um anime antes de dormir, mas não quer perder tempo à procura de algo novo. Abre a aplicação e vai diretamente para a secção "Favoritos", onde guarda os animes que quer ver mais tarde.]
+
+[Percorrendo a lista, encontra um título que tinha adicionado há algumas semanas. Antes de começar a ver, ativa o modo escuro ou modo "luzes apagadas" para não forçar tanto a vista. Em seguida, verifica os servidores disponíveis e escolhe aquele que tem a melhor qualidade e a versão dobrada.]
+
+[Com tudo pronto, carrega no play do primeiro episódio. À medida que avança na história, a plataforma sugere automaticamente o próximo episódio sem interrupções, permitindo-lhe maratonar sem esforço. Envolvida na trama, Maria continua a ver até perceber que já são quase 2h da manhã — decide que este será o último episódio da noite.]
+
 
 ---
 
