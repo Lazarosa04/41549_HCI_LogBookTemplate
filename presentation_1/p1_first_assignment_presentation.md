@@ -13,11 +13,11 @@ Use this checklist as a guide to the minimum items to cover for your project up 
 - [X] Method for heuristic evaluation
 - [X] Overall results for heuristic evaluation and highlights
 - [X] Method for cognitive walkthrough
-- [ ] Identify tasks, illustrate with example, main findings
+- [X] Identify tasks, illustrate with example, main findings
 - [X] Interviews with users / how many / main findings
 - [X] Target users: Personas / Brief presentation of profile + motivation
 - [X] Scenarios / How many / Illustrate for one situation
-- [ ] Requirements
+- [X] Requirements
 - [ ] Decide on overall characteristics of solution: mobile/desktop/web; interaction modalities
 - [ ] Conclusions + what went right/wrong
 - [ ] Self-assessment of work + report Percentage of contribution by each group member
