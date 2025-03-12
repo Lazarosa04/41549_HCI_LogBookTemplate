@@ -66,15 +66,15 @@ Depois de identificar estes problemas ou possíveis melhorias usamos e aplicamos
 
   | **Issue** | **Rúben** | **Carlos** | **Lázaro** | **Recommendations** |
 |-----------|------------|------------|------------|-------------------|
-| Quando não há resultados, aparece mensagem genérica ou sugestões aleatórias | 2 | 2 | - | Melhorar sugestões para conteúdos mais relevantes |
-| Botão de favoritos muito pequeno e escondido | 2 | 3 | - | Aumentar o tamanho e destacar o botão de favoritos |
-| Lista de favoritos escondida | 3 | 3 | - | Melhorar a visibilidade e o acesso à lista de favoritos |
-| Não há um indicador claro de buffering (pode demorar tempo e o utilizador não saber) | 1 | 2 | - | Adicionar uma estimativa de tempo nos casos em que se sabe que a espera será longa devido à falta de rede |
-| Algumas traduções automáticas podem causar confusão | 1 | 2 | - | Revisar traduções para evitar ambiguidades |
-| Faltam botões para ações comuns, como ativar modo escuro, voltar ao topo ou trocar de episódios | 3 | 4 | - | Adicionar botões para facilitar essas ações |
-| Muitos links levam a páginas quebradas ou sites suspeitos | 2 | 3 | - | Identificar quando um filme está indisponível e exibir um aviso claro |
-| Não há opção para baixar vídeos para ver depois | 2 | 4 | - | Adicionar a opção de download para visualização offline |
-| Falta suporte ao usuário para problemas mais complexos | 1 | 3 | - | Criar um link para contato com os criadores da página ou um fórum onde os usuários possam pedir ajuda |
+| Quando não há resultados, aparece mensagem genérica ou sugestões aleatórias | 2 | 2 | 2 | Melhorar sugestões para conteúdos mais relevantes |
+| Botão de favoritos muito pequeno e escondido | 2 | 3 | 3 | Aumentar o tamanho e destacar o botão de favoritos |
+| Lista de favoritos escondida | 3 | 3 | 3 | Melhorar a visibilidade e o acesso à lista de favoritos |
+| Não há um indicador claro de buffering (pode demorar tempo e o utilizador não saber) | 1 | 2 | 2 | Adicionar uma estimativa de tempo nos casos em que se sabe que a espera será longa devido à falta de rede |
+| Algumas traduções automáticas podem causar confusão | 1 | 2 | 1 | Revisar traduções para evitar ambiguidades |
+| Faltam botões para ações comuns, como ativar modo escuro, voltar ao topo ou trocar de episódios | 3 | 4 | 3 | Adicionar botões para facilitar essas ações |
+| Muitos links levam a páginas quebradas ou sites suspeitos | 2 | 3 | 3 | Identificar quando um filme está indisponível e exibir um aviso claro |
+| Não há opção para baixar vídeos para ver depois | 2 | 4 | 3 | Adicionar a opção de download para visualização offline |
+| Falta suporte ao usuário para problemas mais complexos | 1 | 3 | 2 | Criar um link para contato com os criadores da página ou um fórum onde os usuários possam pedir ajuda |
 
 
 
