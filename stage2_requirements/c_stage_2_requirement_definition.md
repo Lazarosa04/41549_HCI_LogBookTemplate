@@ -60,23 +60,35 @@
 # Scenarios
 
 
-## Scenario 1: João procura uma nova série para ver
+## Scenario 1: João procura uma nova série/filme para ver
+O João, após um longo dia de trabalho, chega a casa cansado e só quer relaxar. Ele senta-se no sofá, abre o seu computador e acede à plataforma de filmes e séries. 
 
-[Depois de um longo dia de trabalho, o João desliga o computador do escritório e senta-se no sofá. Quer relaxar e encontrar algo interessante para ver, mas não tem paciência para perder tempo a navegar por catálogos intermináveis de filmes e séries.]
+Ele sabe que está sem tempo a perder, então está a pensar procurar por uma série ou um bom filme que o envolva no enredo, rapidamente. Ele abre a página principal e verifica se há sugestões que combinem com os seus gostos de histórias profundas e com boa produção. 
 
-[Abrindo o site de streaming no seu PC, é imediatamente recebido com sugestões baseadas nos seus gostos anteriores. No topo da página, vê uma secção com “Recomendações para ti”, onde aparece uma nova série épica com boas avaliações no IMDb.]
+Ao ver as recomendações, ele sente-se aliviado, pois a plataforma apresentou-lhe uma lista bem organizada, com base nas suas preferências e na avaliação do público. Ele seleciona um filme e começa a assistir imediatamente, sem perder tempo a procurar por opções irrelevantes. 
 
-[Curioso, clica na sugestão e abre a página da série. O site apresenta um pequeno resumo ou sinopse, a classificação IMDb e um vídeo de pré-visualização. Além disso, uma secção “Se gostaste de Game of Thrones, talvez gostes de...” sugere títulos semelhantes.]
+O João sabe que, se precisar de ajuda, pode confiar nas notas e críticas da plataforma, pois o sistema usa classificações confiáveis, como o IMDb, para garantir que ele só veja o melhor conteúdo.
 
-[Ainda indeciso, o João consulta rapidamente os comentários da comunidade. Ao ver que muitos espectadores elogiaram a série pelo enredo envolvente e pela qualidade da produção, decide dar-lhe uma oportunidade. Com apenas um clique, começa a ver o primeiro episódio, satisfeito por ter encontrado algo interessante sem esforço.]
+## Scenario 2: Maria encontra um anime com ajuda dos rankings
+A Maria está a sair da faculdade e, no caminho de volta para casa, decide aproveitar o tempo no transporte público para assistir a um anime no seu telemóvel. 
 
-## Scenario 2: Maria encontra um anime nos seus favoritos e personaliza a experiência
-[Já passa das 23h e a Maria está deitada na cama com o telemóvel na mão. Quer ver um anime antes de dormir, mas não quer perder tempo à procura de algo novo. Abre a aplicação e vai diretamente para a secção "Favoritos", onde guarda os animes que quer ver mais tarde.]
+Ela adora explorar novos títulos, mas o seu maior desafio é encontrar animes que realmente a cativem e que sejam bem avaliados. 
 
-[Percorrendo a lista, encontra um título que tinha adicionado há algumas semanas. Antes de começar a ver, ativa o modo escuro ou modo "luzes apagadas" para não forçar tanto a vista. Em seguida, verifica os servidores disponíveis e escolhe aquele que tem a melhor qualidade e a versão dobrada.]
+Ao abrir a plataforma de streaming, Maria nota que há uma seção específica para animes populares, com rankings baseados nas melhores avaliações da comunidade. Ela filtra os resultados por gênero e avaliação, e rapidamente encontra um anime com uma boa classificação e que está sendo comentado por vários fãs. 
 
-[Com tudo pronto, carrega no play do primeiro episódio. À medida que avança na história, a plataforma sugere automaticamente o próximo episódio sem interrupções, permitindo-lhe maratonar sem esforço. Envolvida na trama, Maria continua a ver até perceber que já são quase 2h da manhã — decide que este será o último episódio da noite.]
+A Maria começa a assistir e, enquanto o faz, já começa a comentar os episódios nas redes sociais com os seus amigos, discutindo teorias e novidades. 
 
+Ao encontrar animes de qualidade sem perder tempo, ela sente que a plataforma compreende os seus gostos e a ajuda a descobrir novos conteúdos de forma simples e eficiente.
+
+## Scenario 3: Gonçalo 
+
+Gonçalo está em casa com a esposa e os filhos depois de um dia de trabalho. Como sempre, ele quer escolher um filme para assistir em família, mas com os gostos diversos de todos, a tarefa de encontrar um filme que agrade a todos pode ser um desafio. 
+
+Gonçalo abre a plataforma de filmes e começa a procurar algo adequado para diferentes idades. Ele usa a funcionalidade de filtros da plataforma, que lhe permite selecionar filmes para diferentes tipos de conteúdo (aventura, comédia, animação, etc.). 
+
+Após um filtro rápido, ele encontra várias sugestões de filmes que são bem avaliados e que agradam tanto aos adultos como às crianças. Todos se sentam juntos e começam a assistir ao filme escolhido, e Gonçalo sente-se feliz por ter encontrado a solução ideal sem perder tempo e sem ter que verificar manualmente contrúdo ou procurar filmes que não seriam apropriados. 
+
+Ele também marca o filme como favorito, para futuras sessões em família, e confia na plataforma para continuar a fazer boas recomendações para momentos como este.
 
 ---
 
@@ -94,4 +106,4 @@
 
 
 ---
-[Back to main Logbook Page](hci_logbook.md)
+[Back to main Logbook Page](../hci_logbook.md)
