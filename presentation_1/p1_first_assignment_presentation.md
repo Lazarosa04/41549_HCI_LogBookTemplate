@@ -11,12 +11,12 @@ Use this checklist as a guide to the minimum items to cover for your project up 
 - [X] Identification of main competitor and rationale
 - [X] Summary of methods used to analyse the main competitor
 - [X] Method for heuristic evaluation
-- [ ] Overall results for heuristic evaluation and highlights
+- [X] Overall results for heuristic evaluation and highlights
 - [X] Method for cognitive walkthrough
 - [ ] Identify tasks, illustrate with example, main findings
 - [X] Interviews with users / how many / main findings
-- [ ] Target users: Personas / Brief presentation of profile + motivation
-- [ ] Scenarios / How many / Illustrate for one situation
+- [X] Target users: Personas / Brief presentation of profile + motivation
+- [X] Scenarios / How many / Illustrate for one situation
 - [ ] Requirements
 - [ ] Decide on overall characteristics of solution: mobile/desktop/web; interaction modalities
 - [ ] Conclusions + what went right/wrong
