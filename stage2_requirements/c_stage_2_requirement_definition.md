@@ -95,15 +95,35 @@ Ele também marca o filme como favorito, para futuras sessões em família, e co
 
 # Requirements
 
-
-
-
-
 ## C.1. Functional requirements
+A plataforma deve permitir que os utilizadores pesquisem filmes e séries de forma eficiente (recentes, categorias, filtros).
 
+Deve oferecer recomendações personalizadas com base no gostos e avaliações dos utilizadores.
+
+Deve suportar a criação de perfis para diferentes tipos de utilizadores (exemplo: individual, familiar, fã de anime).
+
+Deve permitir que os utilizadores guardem conteúdos para assistir mais tarde (listas de favoritos).
+
+Deve incluir um sistema de avaliação para que os utilizadores possam classificar (sistema de ranking) e comentar filmes e séries.
 
 ## C.2. Non-functional requirements
 
+(Embora alguns requisitos possam não ser diretamente aplicáveis ao nosso caso, foram incluídos para manter um nível profissional na definição do sistema.)
+
+### Usabilidade
+- A interface da plataforma deve ser intuitiva, permitindo a navegação fácil mesmo para utilizadores com pouca experiência digital.
+- O design deve ser responsivo, garantindo assim uma boa experiência tanto em computadores como em dispositivos móveis.
+
+### Desempenho
+- A plataforma deve carregar os conteúdos rapidamente, minimizando tempos de espera na pesquisa e na navegação.
+
+### Segurança e Privacidade
+- A plataforma deve permitir a criação de perfis individuais dentro de uma conta para conter gostos e pesquisa estar a ter isso em conta.
+- Deve garantir a privacidade dos dados dos utilizadores, não partilhando o histórico de visualização sem consentimento.
+
+### Escalabilidade
+- A arquitetura do sistema deve ser capaz de suportar um grande número de utilizadores simultaneamente sem comprometer a experiência.
+- Deve permitir atualizações frequentes para incluir novos conteúdos e funcionalidades.
 
 ---
 [Back to main Logbook Page](../hci_logbook.md)
