@@ -1,0 +1,107 @@
+.navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .menu {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.navbar .logo {
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar .logo img {
+    height: 100%; /* Occupies the full height of the navbar */
+    width: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the image scales proportionally */
+}
+
+.navbar .mini-menu {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.navbar div img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar div img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+   
+}
+
+.navbar .menu img{
+    width: 80px;
+    height: 80px;
+}
+
+.search{
+    margin-right: 20px;
+}
+
+.settings{
+    margin-right: 6px;
+}
+
+.navbar div img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image fits within the div */
+}
+
+.carrossel {
+    height: 40vh; /* 33% da altura da página */
+    display: flex;
+    position: relative;
+    background-color: #00000027; /* Cor de fundo opcional */
+}
+
+.carrossel .title {
+    position: absolute;
+    top: 30px; /* Ajuste conforme necessário */
+    left: 30px; /* Ajuste conforme necessário */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+}
+
+.carrossel .description {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário */
+    font-size: 1rem;
+    color: #555; /* Cor do texto */
+    border: 2px solid #000; /* Borda preta */
+    padding: 10px; /* Espaçamento interno */
+    background-color: rgba(0, 255, 255, 0.253);
+    width: 25%; /* Largura de 33% do carrossel */
+    height: 30%;
+    
+}
+
+.carrossel img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Ocupa toda a largura do carrossel */
+    z-index: -1; /* Coloca o background abaixo do título e descrição */
+    height: 100%;
+    background-size: cover; /* Garante que a imagem cubra o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Garante que a imagem ocupe todo o carrossel */
+    background-repeat: no-repeat; /* Evita repetição */
+}
