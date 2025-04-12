@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fav_style.css">
+    <title>Favorite Page</title>
+</head>
+<body style="background-color: #002572; font-family: 'Rubik', sans-serif;">
+    <!--aporveitar header do lazaro-->
+
+    <!--mudar estas divs no senido de por mais bonito-->
+    <div class="search-container">
+        <h1>Search Lists</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="buscar()">🔍</button>
+        </div>
+    </div>
+
+    <!--mudar estas divs no senido de por mais bonito-->
+    <div class="type-buttons-wrapper">
+        <button class="button-list">My Lists</button>
+        <button class="button-list">Following</button>
+        <button class="button-list">Popular</button>
+    </div>
+    
+    <!--mudar estas divs no senido de por mais bonito-->
+    <div class="create-list-container">
+        <div class="create-list-form">
+            <h1>List Name</h1>
+            <input type="text" id="createListInput" placeholder="Create list...">
+            <button onclick="create()" style="border-radius: 15px;">ADD</button>
+        </div>
+    </div>
+
+    <!--esta parte esta bem feita deixa estar-->
+    <div class="create-list-container" style="display: inline-block; max-width: fit-content;">
+        <div class="list-item">
+            <div class="list-header">
+                <p>Default List</p>
+                <div class="icons">
+                    <button class="icon-button">✏️</button>
+                    <button class="icon-button">🗑️</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="list-body">
+                <a href="outra-pagina.html">
+                    <img src="../imgs/random_img.png" alt="Imagem da lista" width="100">
+                </a>
+                <button class="plus-button" onclick="abrirPopup()">+</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
