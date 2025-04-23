@@ -1,5 +1,13 @@
 /* div -> search-container */
 
+.list-tools-container {
+    background-color: #f2f6fd;
+    padding: 20px 30px;
+    margin: 30px auto;
+    margin-top: 10px;
+
+}
+
 /* Container de busca */
 .search-container {
     /*background-color: #007BFF;*/
@@ -58,8 +66,6 @@
     background-color: #f0f0f0;
 }
 
-
-
 /* div -> choose_type_list */
 /* nao esta a mudar o tamanho dos botoes */
 /* Novo contêiner para os botões de tipo */
@@ -85,12 +91,21 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    text-decoration: none; /* remove sublinhado */
+    color: black; 
 }
 
 .button-list:hover {
     background-color: #adb6da;
 }
 
+.button-list.active {
+    background-color: #5d7cb6;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    pointer-events: none; /* Impede clicar de novo */
+}
 
 /* Container principal para pesquisa e criação de lista */
 .create-list-container {
@@ -138,7 +153,7 @@
 }
 
 /* Container da lista de imagem e botões */
-.create-list-container:last-child {
+.create-list-container {
     display: inline-block; /* Isso faz com que o container de imagem tenha o tamanho necessário */
     max-width: fit-content; /* O tamanho se ajusta automaticamente à largura do conteúdo */
     padding: 10px;
@@ -155,7 +170,11 @@
 .list-header p {
     margin: 0;
     font-weight: bold;
+    max-width: 120px;
+    word-wrap: break-word;
+    white-space: normal;
 }
+
 
 .icons {
     display: flex;

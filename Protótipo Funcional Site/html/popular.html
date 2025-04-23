@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fav_style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/popular.css">
+    <title>Popular Page</title>
+</head>
+<body style="background-color: #002572; font-family: 'Rubik', sans-serif;">
+    <!--aporveitar header do lazaro-->
+    <div class = "navbar">
+        <div class = "menu">
+            <img src="../imgs/menu.png" alt="Menu">
+
+        </div>
+        <div class  = "logo">
+            <a href="index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+        </div>
+        <div class = mini-menu>
+            <div class = "search">
+                <img src="../imgs/search.png" alt="Search">
+            
+            </div>
+            <div class = "settings">
+                <a href="settings.html"><img src="../imgs/settings.png" alt="Settings"></a>
+            </div>
+            <div class = "profile">
+                <img src="../imgs/user.png" alt="Profile">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="list-tools-container">
+        <!--mudar estas divs no senido de por mais bonito-->
+        <div class="search-container">
+            <h1>Search Lists</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button onclick="buscar()">🔍</button>
+            </div>
+        </div>
+
+        <!--mudar estas divs no senido de por mais bonito-->
+        <div class="type-buttons-wrapper">
+            <a href="fav.html" class="button-list">My Lists</a>
+            <a href="following.html" class="button-list">Following</a>
+            <button class="button-list active">Popular</button>
+        </div>
+    </div>
+
+    <!--ter div para criar conjunto de coleções da popular-->
+    <div class="categories-wrapper">
+        <div class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">Disney</h2>
+                <button class="popular_plus-button" onclick="toggleCheck(this)">+</button>
+            </div>
+            <div class="movie-row">
+                <img src="../imgs/random_img.png" alt="Movie 1">
+                <img src="../imgs/random_img.png" alt="Movie 2">
+                <img src="../imgs/random_img.png" alt="Movie 3">
+                <img src="../imgs/random_img.png" alt="Movie 4">
+                <img src="../imgs/random_img.png" alt="Movie 5">
+            </div>
+        </div>
+    
+        <div class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">Marvel</h2>
+                <button class="popular_plus-button" onclick="toggleCheck(this)">+</button>
+            </div>
+            <div class="movie-row">
+                <img src="../imgs/random_img.png" alt="Movie 1">
+                <img src="../imgs/random_img.png" alt="Movie 2">
+                <img src="../imgs/random_img.png" alt="Movie 3">
+                <img src="../imgs/random_img.png" alt="Movie 4">
+                <img src="../imgs/random_img.png" alt="Movie 5">
+            </div>
+        </div>
+    </div>
+    
+    <div class="categories-wrapper">
+        <div class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">Star Wars</h2>
+                <button class="popular_plus-button" onclick="toggleCheck(this)">+</button>
+            </div>
+            <div class="movie-row">
+                <img src="../imgs/random_img.png" alt="Movie 1">
+                <img src="../imgs/random_img.png" alt="Movie 2">
+                <img src="../imgs/random_img.png" alt="Movie 3">
+                <img src="../imgs/random_img.png" alt="Movie 4">
+                <img src="../imgs/random_img.png" alt="Movie 5">
+            </div>
+        </div>
+    
+        <div class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">DC</h2>
+                <button class="popular_plus-button" onclick="toggleCheck(this)">+</button>
+            </div>
+            <div class="movie-row">
+                <img src="../imgs/random_img.png" alt="Movie 1">
+                <img src="../imgs/random_img.png" alt="Movie 2">
+                <img src="../imgs/random_img.png" alt="Movie 3">
+                <img src="../imgs/random_img.png" alt="Movie 4">
+                <img src="../imgs/random_img.png" alt="Movie 5">
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/popular.js"></script>
+</body>
+</html>

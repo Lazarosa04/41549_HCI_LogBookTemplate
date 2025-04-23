@@ -6,7 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/fav_style.css">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Favorite Page</title>
+    <link rel="stylesheet" href="../css/popular.css">
+    <title>Following Page</title>
 </head>
 <body style="background-color: #002572; font-family: 'Rubik', sans-serif;">
     <!--aporveitar header do lazaro-->
@@ -32,9 +33,9 @@
             </div>
         </div>
     </div>
-    
+
     <div class="list-tools-container">
-        <!-- search listas -->
+        <!--mudar estas divs no senido de por mais bonito-->
         <div class="search-container">
             <h1>Search Lists</h1>
             <div class="search-bar">
@@ -42,50 +43,15 @@
                 <button onclick="buscar()">🔍</button>
             </div>
         </div>
-        
-        <!-- escolher entre mylists, following, popular -->
+
+        <!--mudar estas divs no senido de por mais bonito-->
         <div class="type-buttons-wrapper">
-            <button class="button-list active">My Lists</button>
-            <a href="following.html" class="button-list">Following</a>
+            <a href="fav.html" class="button-list">My Lists</a>
+            <button class="button-list active">Following</button>
             <a href="popular.html" class="button-list">Popular</a>
         </div>
-        
-        <!--adicionar uma nova lista -->
-        <div class="create-list-container">
-            <div class="create-list-form">
-                <h1>List Name</h1>
-                <input type="text" id="createListInput" placeholder="Create list...">
-                <button onclick="create()" style="border-radius: 15px;">ADD</button>
-            </div>
-        </div>
     </div>
-    
-
-    <div id="list-container">
-        <!--esta parte esta bem feita deixa estar-->
-        <div class="create-list-container" style="display: inline-block; max-width: fit-content;">
-            <div class="list-item">
-                <div class="list-header">
-                    <p>Default List</p>
-                    <div class="icons">
-                        <button class="icon-button">✏️</button>
-                        <button class="icon-button">🗑️</button>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="list-body">
-                    <a href="outra-pagina.html">
-                        <img src="../imgs/random_img.png" alt="Imagem da lista" width="100">
-                    </a>
-                    <button class="plus-button" onclick="abrirPopup()">+</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="../js/fav_script.js"></script>
-    
+    <!--ter div para criar conjunto de coleções da popular-->
+    <script src="../js/following.js"></script>
 </body>
 </html>
