@@ -1,0 +1,74 @@
+/* Estilo do pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.movie-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/* Estilo para o contêiner do filme */
+.movie-item {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 125px;
+    height: 200px;  /* Definir uma altura fixa */
+}
+
+/* Ajuste da imagem para ocupar o espaço corretamente */
+.movie-item img {
+    width: 100%;        /* Imagem ocupa toda a largura */
+    height: 150px;      /* Defina uma altura fixa */
+    object-fit: cover;  /* A imagem vai cobrir a área, mantendo a proporção */
+    border-radius: 5px; /* Bordas arredondadas da imagem */
+}
+
+/* Estilo para a bolinha */
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Bolinha ativa quando o filme é favoritado */
+.favorite-btn.active {
+    background-color: gold;
+}

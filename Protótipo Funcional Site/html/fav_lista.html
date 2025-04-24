@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fav_lista.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Favorite lista Page</title>
+</head>
+<body style="background-color: #002572; font-family: 'Rubik', sans-serif;">
+    <!--aporveitar header do lazaro-->
+    <div class = "navbar">
+        <div class = "menu">
+            <img src="../imgs/menu.png" alt="Menu">
+
+        </div>
+        <div class  = "logo">
+            <a href="index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+        </div>
+        <div class = mini-menu>
+            <div class = "search">
+                <img src="../imgs/search.png" alt="Search">
+            
+            </div>
+            <div class = "settings">
+                <a href="settings.html"><img src="../imgs/settings.png" alt="Settings"></a>
+            </div>
+            <div class = "profile">
+                <img src="../imgs/user.png" alt="Profile">
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="top-row">
+        <!-- Botão de voltar -->
+        <button class="back-button" onclick="window.location.href='fav.html'">⬅</button>
+
+        <!-- Nome da lista -->
+        <h2 class="list-name">Default List</h2>
+
+        <!-- Barra de pesquisa -->
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button onclick="buscar()">🔍</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- container para os filmes -->
+    <div id="movies-container">
+        <p style="color: white; padding: 20px;">Ainda não há filmes nesta lista.</p>
+    </div>
+
+    <script src="../js/fav_lista.js"></script>
+    
+</body>
+</html>

@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/fav_style.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/popup_fav.css">
     <title>Favorite Page</title>
 </head>
 <body style="background-color: #002572; font-family: 'Rubik', sans-serif;">
@@ -60,6 +61,9 @@
         </div>
     </div>
     
+    <!--
+    <button onclick="clearLists()" style="margin-bottom: 20px;">Limpar Listas</button>
+    -->
 
     <div id="list-container">
         <!--esta parte esta bem feita deixa estar-->
@@ -81,6 +85,17 @@
                     </a>
                     <button class="plus-button" onclick="abrirPopup()">+</button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUP -->
+    <div id="movie-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="fecharPopup()">×</span>
+            <input type="text" id="movie-search" placeholder="Pesquise por filmes..." oninput="filtrarFilmes()" />
+            <div id="movie-list" class="movie-list">
+                <!-- Filmes serão inseridos aqui -->
             </div>
         </div>
     </div>

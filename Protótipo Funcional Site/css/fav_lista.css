@@ -1,0 +1,86 @@
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list-name {
+    color: white;
+    font-size: 36px;
+}
+
+.search-container {
+    /*background-color: #007BFF;*/
+    width: 300px; 
+    margin-left: auto;  /* ficar colado ao lado direito */
+    justify-content: space-around;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    color: black;
+    background-color: #ECF9FF;
+    border: 1px solid #ccc;
+    margin-bottom: 2px; /* para colar no próximo bloco */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o input e o botão */
+}
+
+/* Estilo do campo de entrada */
+/* Campo de entrada com fundo branco e borda preta */
+.search-container input {
+    padding: 10px;
+    border: 2px solid #5d7cb6;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    background-color: white;
+    color: black;
+}
+
+/* Botão com borda preta e fundo branco */
+.search-container button {
+    padding: 10px;
+    border: 2px solid #5d7cb6;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-container button:hover {
+    background-color: #f0f0f0;
+}
+
+.movies-container {
+    margin: 30px;
+    background-color: #011f4b;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+.back-button {
+    background-color: #22c55e;
+    color: #ffffff;
+    border: 2px solid #5d7cb6;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #6deb3b;
+}
