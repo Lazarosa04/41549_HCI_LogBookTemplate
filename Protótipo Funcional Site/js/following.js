@@ -1,4 +1,5 @@
-const followed = JSON.parse(localStorage.getItem('followedCategories')) || [];
+window.addEventListener('DOMContentLoaded', () => {
+    const followed = JSON.parse(localStorage.getItem('followedCategories')) || [];
     const container = document.createElement('div');
 
     followed.forEach(({ category, movies }) => {
@@ -14,15 +15,17 @@ const followed = JSON.parse(localStorage.getItem('followedCategories')) || [];
                 ${movies.map(src => `<img src="${src}" alt="Movie">`).join('')}
             </div>
         `;
-
+        
         container.appendChild(section);
     });
 
     document.body.appendChild(container);
+});
 
-    function removeFollowed(category, button) {
-        let followed = JSON.parse(localStorage.getItem('followedCategories')) || [];
-        followed = followed.filter(item => item.category !== category);
-        localStorage.setItem('followedCategories', JSON.stringify(followed));
-        button.parentElement.parentElement.remove();
-    }
+
+function removeFollowed(category, button) {
+    let followed = JSON.parse(localStorage.getItem('followedCategories')) || [];
+    followed = followed.filter(item => item.category !== category);
+    localStorage.setItem('followedCategories', JSON.stringify(followed));
+    button.parentElement.parentElement.remove();
+}
