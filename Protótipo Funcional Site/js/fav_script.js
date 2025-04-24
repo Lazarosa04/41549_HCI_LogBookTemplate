@@ -19,6 +19,8 @@ function create() {
         link: "fav_lista.html?listName=" + encodeURIComponent(listName)
     };    
 
+    console.log("newList:", newList);
+
     // Adiciona e guarda no localStorage
     myLists.push(newList);
     localStorage.setItem('myLists', JSON.stringify(myLists));
@@ -51,10 +53,12 @@ function renderList({ name, image, link }) {
                 <a href="${link}">
                     <img src="${image}" alt="Imagem da lista" width="100">
                 </a>
-                <button class="plus-button" onclick="abrirPopup()">+</button>
+                <button class="plus-button" onclick="abrirPopup('${name}')">+</button>
             </div>
         </div>
     `;
+
+    console.log("list name:", name);
 
     document.getElementById("list-container").appendChild(container);
 }
@@ -71,10 +75,15 @@ function clearLists() {
 }
 
 // Função para abrir o pop-up
-function abrirPopup() {
+let currentListName = "Default List"; // valor default
+
+function abrirPopup(listName = "Default List") {
+    currentListName = listName; // guarda o nome da lista atual
     document.getElementById("movie-popup").style.display = "flex";
-    carregarFilmes();  // Carrega a lista de filmes ao abrir o pop-up
+    console.log("currentListName", currentListName);
+    carregarFilmes();
 }
+
 
 // Função para fechar o pop-up
 function fecharPopup() {
@@ -83,61 +92,102 @@ function fecharPopup() {
 
 let filmes = [
     { title: "O Senhor dos Anéis", image: "../imgs/random_img.png", id: 1 },
-    { title: "Matrix", image: "https://via.placeholder.com/100x150?text=2", id: 2 },
-    { title: "Star Wars", image: "https://via.placeholder.com/100x150?text=3", id: 3 },
-    { title: "Avatar", image: "https://via.placeholder.com/100x150?text=4", id: 4 },
-    { title: "Vingadores", image: "https://via.placeholder.com/100x150?text=5", id: 5 },
-    { title: "Jurassic Park", image: "https://via.placeholder.com/100x150?text=6", id: 6 }
+    { title: "Matrix", image: "../imgs/random_img.png", id: 2 },
+    { title: "Star Wars", image: "../imgs/random_img.png", id: 3 },
+    { title: "Avatar", image: "../imgs/random_img.png", id: 4 },
+    { title: "Vingadores", image: "../imgs/random_img.png", id: 5 },
+    { title: "Jurassic Park", image: "../imgs/random_img.png", id: 6 },
+    { title: "One Piece", image: "../imgs/random_img.png", id: 7 },
+    { title: "Last Of Us", image: "../imgs/random_img.png", id: 8 },
+    { title: "Dr House", image: "../imgs/random_img.png", id: 9 },
+    { title: "Stranger Things", image: "../imgs/random_img.png", id: 10 },
 ];
 
+function toggleFavorito(filmeId) {
+    const filme = filmes.find(f => f.id === filmeId);
+    let favoritosPorLista = JSON.parse(localStorage.getItem('favoritos')) || {};
 
-// Função para carregar filmes
-let filmesFavoritos = JSON.parse(localStorage.getItem('favoritos')) || []; // Recupera os favoritos salvos no localStorage
+    console.log("currentListName:", currentListName);
+    /** filme selecionado: Object { title: "O Senhor dos Anéis", image: "../imgs/random_img.png", id: 1 } */
+    console.log("filme selecionado:", filme);
+    /** "new list": Array [ {…} ]
+​​          0: Object { title: "O Senhor dos Anéis", image: "../imgs/random_img.png", id: 1 }
+​           ​length: 1 */
+    console.log("Favoritos antes da alteração:", favoritosPorLista);
 
-// Função para carregar filmes
+    // Verifica se a lista de favoritos da lista atual existe, se não, cria uma nova lista
+    if (!favoritosPorLista[currentListName]) {
+        favoritosPorLista[currentListName] = [];
+    }
+
+    const listaAtual = favoritosPorLista[currentListName];
+    /** Array []
+        0: Object { title: "O Senhor dos Anéis", image: "../imgs/random_img.png", id: 1 }
+        length: 1 */
+    console.log("Lista atual de favoritos:", listaAtual);
+
+    // Verifica se o filme já está na lista de favoritos
+    const jaFavorito = listaAtual.some(f => f.id === filmeId);
+    console.log("Já favoritado?", jaFavorito);
+
+    // Se o filme já está favoritado, remove ele; caso contrário, adiciona
+    if (jaFavorito) {
+        favoritosPorLista[currentListName] = listaAtual.filter(f => f.id !== filmeId);
+    } else {
+        favoritosPorLista[currentListName].push(filme);
+    }
+
+    /** "new list": Array [ {…} ]
+        0: Object { title: "O Senhor dos Anéis", image: "../imgs/random_img.png", id: 1 }
+        length: 1 */
+    console.log("Favoritos após a alteração:", favoritosPorLista);
+
+    // Salva os favoritos no localStorage
+    localStorage.setItem('favoritos', JSON.stringify(favoritosPorLista));
+    /** voritos no localStorage após a alteração: ["O Senhor dos Anéis","O Senhor dos Anéis",{"title":"Jurassic Park","image":"https://via.placeholder.com/100x150?text=6","id":6},{"title":"O Senhor dos Anéis","image":"../imgs/random_img.png","id":1}] */
+    console.log("Favoritos no localStorage após a alteração:", localStorage.getItem('favoritos'));
+
+    // Atualiza a interface (carrega novamente os filmes e seus estados de favorito)
+    carregarFilmes();
+}
+
+
 function carregarFilmes() {
     const movieList = document.getElementById("movie-list");
 
     // Limpa a lista de filmes antes de adicionar novos
     movieList.innerHTML = '';
+    console.log("Carregando filmes...");
 
     filmes.forEach(filme => {
         const movieItem = document.createElement("div");
         movieItem.className = "movie-item";
+        
+        const isFavorite = isFavorito(filme.id);  // Verifica se o filme é favorito
+        console.log("Filme:", filme.title, "Favorito?", isFavorite);
+
         movieItem.innerHTML = `
             <img src="${filme.image}" alt="${filme.title}" />
             <p>${filme.title}</p>
-            <div class="favorite-btn ${isFavorito(filme.id) ? 'active' : ''}" onclick="toggleFavorito(${filme.id})"></div>
+            <div class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorito(${filme.id})"></div>
         `;
         movieList.appendChild(movieItem);
     });
 }
 
-
-// Verifica se o filme está nos favoritos
 function isFavorito(filmeId) {
-    return filmesFavoritos.some(filme => filme.id === filmeId);
-}
-
-
-// Função para adicionar ou remover o filme dos favoritos
-function toggleFavorito(filmeId) {
-    const filme = filmes.find(f => f.id === filmeId); // Obtém o filme correspondente
-
-    if (isFavorito(filmeId)) {
-        // Remove o filme dos favoritos
-        filmesFavoritos = filmesFavoritos.filter(f => f.id !== filmeId);
-    } else {
-        // Adiciona o filme aos favoritos
-        filmesFavoritos.push(filme);
+    const favoritosPorLista = JSON.parse(localStorage.getItem('favoritos')) || {};
+    if (!favoritosPorLista[currentListName]) {
+        return false;
     }
+    const listaAtual = favoritosPorLista[currentListName];
 
-    // Salva os favoritos no localStorage
-    localStorage.setItem('favoritos', JSON.stringify(filmesFavoritos));
+    console.log("Verificando se o filme está nos favoritos:", filmeId);
+    console.log("Favoritos da lista atual:", listaAtual);
 
-    // Atualiza a interface para refletir a mudança
-    carregarFilmes();
+    return listaAtual.some(filme => filme.id === filmeId);
 }
+
 
 
 
