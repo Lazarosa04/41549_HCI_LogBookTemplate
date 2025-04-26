@@ -50,5 +50,51 @@
 
         </div>
     </div>
+
+    <div class="profile-sidebar" id="profileSidebar">
+        <div class="profile-header">
+            <div class="profile-pic-container">
+                <img id="profilePicture" src="../imgs/user.png" alt="Foto de Perfil">
+                <input type="file" id="profilePicInput" style="display: none;">
+            </div>
+            <div class="profile-name-edit">
+                <input type="text" id="profileName" placeholder="Nome">
+            </div>
+            <button class="close-btn" onclick="closeSidebar()">✖</button>
+        </div>
+        
+        <div class="profile-content">
+            <div class="profile-genres">
+                <h3>Favorite Genres:</h3>
+                <button class="add-genre-btn" onclick="showGenreOptions()">+ Add Genre</button>
+                <div id="genresList" class="genres-list">
+                    <!-- Géneros aparecem aqui -->
+                </div>
+            </div>
+        </div>
+    
+        <div class="profile-bio">
+            <h3>Bibliography:</h3>
+            <textarea id="profileBio" placeholder="Escreve algo sobre ti..."></textarea>
+        </div>
+    
+        <div class="profile-buttons">
+            <button onclick="saveProfile()" style="background-color: rgb(133, 223, 30);" >Save</button>
+            <button onclick="closeSidebar()" style="background-color: rgb(235, 55, 10);" >Cancel</button>
+        </div>
+    
+        <!-- Selector de géneros escondido -->
+        <div id="genreSelector" class="genre-selector hidden">
+            <div onclick="addGenre('Action')">Action</div>
+            <div onclick="addGenre('Drama')">Drama</div>
+            <div onclick="addGenre('Comedy')">Comedy</div>
+            <div onclick="addGenre('Horror')">Horror</div>
+            <div onclick="addGenre('Sci-Fi')">Sci-Fi</div>
+            <!-- Adiciona mais géneros que quiseres -->
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+        
 </body>
 </html>
