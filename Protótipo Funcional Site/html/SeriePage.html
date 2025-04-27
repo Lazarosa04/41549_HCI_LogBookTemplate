@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Série Page</title>
+  <link rel="stylesheet" href="../css/SeriePage.css">
+</head>
+<body>
+
+  <a href="index.html" class="back-button">Voltar Atrás</a>
+
+  <div class="container">
+    <div class="info-section">
+      <h1>Nome da Série</h1>
+      <div class="details">Ano | Temporadas | Classificação</div>
+
+      <div class="genres">
+        <span class="genre">Drama</span>
+        <span class="genre">Aventura</span>
+        <span class="genre">Ficção Científica</span>
+      </div>
+
+      <div class="summary-box">
+        <p>Sinopse da série. Aqui é onde se descreve brevemente a história e o contexto da série para atrair o público.</p>
+      </div>
+
+      <h2 class="section-title">Elenco</h2>
+      <div class="cast">
+        Ator 1, Ator 2, Ator 3, Atriz 1
+      </div>
+
+      <h2 class="section-title">Episódios</h2>
+      <div class="summary-box">
+        <ul>
+          <li>Episódio 1 - O Começo</li>
+          <li>Episódio 2 - A Jornada</li>
+          <li>Episódio 3 - O Confronto</li>
+          <li>Episódio 4 - Revelações</li>
+          <li>Episódio 5 - O Final</li>
+        </ul>
+      </div>
+
+      <div class="buttons">
+        <button class="button">Assistir Agora</button>
+        <button class="button favorite">Adicionar aos Favoritos</button>
+      </div>
+
+    </div>
+
+    <div class="play-button-container">
+      <button class="play-button">&#9658;</button>
+    </div>
+  </div>
+
+  <!-- Popup de favoritos (caso uses) -->
+  <div class="fav-popup" style="display:none;" id="favPopup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="document.getElementById('favPopup').style.display='none'">&times;</span>
+      <h3>Adicionar aos Favoritos</h3>
+      <div class="popup-controls">
+        <button>Lista 1</button>
+        <button>Lista 2</button>
+      </div>
+      <div class="create-new-list">
+        <input type="text" placeholder="Nova lista">
+        <button>Criar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
