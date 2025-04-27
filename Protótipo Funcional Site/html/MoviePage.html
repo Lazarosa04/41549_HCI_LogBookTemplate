@@ -36,14 +36,38 @@
             Ver Trailer
           </button>
           
-        <button class="button favorite">Adicionar aos Favoritos</button>
-      </div>
+          <button class="button favorite" onclick="openFavPopup()">Adicionar aos Favoritos</button>        </div>
     </div>
 
     <!-- Botão Play -->
     <div class="play-button-container">
       <button class="play-button">▶</button>
     </div>
+
+    <!-- Só se mexe no css, para n dar cabo do JS-->
+    <!-- Pop-up para adicionar aos favoritos -->
+    <div id="fav-popup" class="fav-popup" style="display: none;">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeFavPopup()">×</span>
+        <h2>Adicionar aos Favoritos</h2>
+        <div class="popup-controls">
+          <select id="listDropdown"></select>
+          <button onclick="addMovieToList()">Adicionar</button>
+        </div>
+        <div class="create-new-list">
+          <button onclick="showCreateListInput()">+ Criar Nova Lista</button>
+          <div id="newListInputContainer" class="newListInputContainer"  style="display: none;">
+            <input type="text" id="newListName" placeholder="Nome da nova lista">
+            <button onclick="createNewList()">Criar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+
+  <script src="../js/movie.js"></script>
+
 </body>
 </html>

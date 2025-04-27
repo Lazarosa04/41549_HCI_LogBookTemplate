@@ -158,4 +158,94 @@ body {
     margin-right: 10px;
     vertical-align: middle;
   }
+
+  /* pop dos favoritos*/
+
+  .fav-popup {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border: 2px solid #0077ff;
+    border-radius: 10px;
+    width: 320px;
+    height: 220px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: flex-start; /* mudar aqui */
+    align-items: center; /* centra o conteúdo */
+    overflow: hidden;
+  }
+  
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .popup-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .create-new-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .newListInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005ccc;
+  }
+  
+  /* Input */
+  input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 60%;
+    font-size: 14px;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #141414;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
   
