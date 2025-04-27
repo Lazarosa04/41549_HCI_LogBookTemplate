@@ -13,7 +13,7 @@
   <div class="container">
     <div class="info-section">
       <h1>Nome da Série</h1>
-      <div class="details">Ano | Temporadas | Classificação</div>
+      <div class="details">2023 • 3 Temporadas • IMDb 7.5/10</div>
 
       <div class="genres">
         <span class="genre">Drama</span>
@@ -21,6 +21,7 @@
         <span class="genre">Ficção Científica</span>
       </div>
 
+      <div class="section-title">Summary</div>
       <div class="summary-box">
         <p>Sinopse da série. Aqui é onde se descreve brevemente a história e o contexto da série para atrair o público.</p>
       </div>
@@ -30,48 +31,47 @@
         Ator 1, Ator 2, Ator 3, Atriz 1
       </div>
 
-      <h2 class="section-title">Episódios</h2>
-      <div class="summary-box">
-        <ul>
-          <li>Episódio 1 - O Começo</li>
-          <li>Episódio 2 - A Jornada</li>
-          <li>Episódio 3 - O Confronto</li>
-          <li>Episódio 4 - Revelações</li>
-          <li>Episódio 5 - O Final</li>
-        </ul>
-      </div>
-
       <div class="buttons">
-        <button class="button">Assistir Agora</button>
+        <button class="button">
+          <img src="../imgs/logo.png" alt="Ícone Trailer" class="icon">
+          Ver Trailer
+        </button>
         <button class="button favorite">Adicionar aos Favoritos</button>
       </div>
-
     </div>
 
     <div class="play-button-container">
       <button class="play-button">&#9658;</button>
     </div>
-  </div>
 
-  <!-- Popup de favoritos -->
-  <div class="fav-popup" style="display:none;" id="favPopup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closeFavPopup()">&times;</span>
-      <h3>Adicionar aos Favoritos</h3>
-      <div class="popup-controls">
-        <select id="listDropdown"></select>
-        <button id="addToListButton">Adicionar</button>
-      </div>
-      <div class="create-new-list">
-        <button id="showCreateListButton">+ Criar Nova Lista</button>
-        <div id="newListInputContainer" class="newListInputContainer" style="display: none;">
-          <input type="text" id="newListName" placeholder="Nome da nova lista">
-          <button id="createListButton">Criar</button>
-        </div>
-      </div>
-    </div>
+<!-- Episódios - Seção à direita -->
+<div class="episode-menu">
+  <div class="episode-header">
+    <h2>Episódios</h2>
+    <button class="next-season-button">
+      Next Season <span class="arrow">→</span>
+    </button>
   </div>
-  
+  <div class="episode-list">
+    <div class="episode"><a href="#">Episódio 1 - O Começo</a></div>
+    <div class="episode"><a href="#">Episódio 2 - A Jornada</a></div>
+    <div class="episode"><a href="#">Episódio 3 - O Confronto</a></div>
+    <div class="episode"><a href="#">Episódio 4 - Revelações</a></div>
+    <div class="episode"><a href="#">Episódio 5 - O Final</a></div>
+    <div class="episode"><a href="#">Episódio 6 - A Aventura Continua</a></div>
+    <div class="episode"><a href="#">Episódio 7 - A Grande Batalha</a></div>
+    <div class="episode"><a href="#">Episódio 8 - O Retorno do Herói</a></div>
+    <div class="episode"><a href="#">Episódio 9 - Novos Aliados</a></div>
+    <div class="episode"><a href="#">Episódio 10 - O Confronto Final</a></div>
+    <div class="episode"><a href="#">Episódio 11 - O Grande Sacrifício</a></div>
+    <div class="episode"><a href="#">Episódio 12 - O Destino</a></div>
+    <div class="episode"><a href="#">Episódio 13 - O Desfecho</a></div>
+    <!-- Mais episódios podem ser adicionados aqui -->
+  </div>
+</div>
+
+
+  </div>
 
 </body>
 </html>

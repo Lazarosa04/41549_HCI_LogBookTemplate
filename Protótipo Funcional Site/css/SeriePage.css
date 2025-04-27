@@ -244,32 +244,81 @@ input[type="text"] {
 }
 
 /* ========== Área de Episódios ========== */
+/* Episódios */
 .episode-menu {
-    width: 250px;
+    width: 300px; /* Largura ajustada */
     background-color: #1c1c1c;
     padding: 20px;
     border-radius: 10px;
-    overflow-y: auto;
-    max-height: 80vh;
+    overflow-y: auto; /* Permite rolar verticalmente */
+    max-height: 80vh; /* Altura máxima da área de episódios */
+    position: sticky;
+    top: 60px; /* Fixa os episódios enquanto rola a página */
 }
 
 .episode-menu h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
     text-align: center;
+    color: #fff;
+}
+
+.episode-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.next-season-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-season-button .arrow {
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+.next-season-button:hover {
+    background-color: #555;
+}
+
+.episode-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adiciona espaço entre os episódios */
 }
 
 .episode {
     background-color: #333;
     border-radius: 8px;
     padding: 15px;
-    margin-bottom: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center;
     font-size: 1.1em;
 }
 
+.episode a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .episode:hover {
     background-color: #555;
 }
+
+.episode a:hover {
+    text-decoration: underline;
+}
+
+
