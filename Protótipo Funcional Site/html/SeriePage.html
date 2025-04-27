@@ -53,21 +53,25 @@
     </div>
   </div>
 
-  <!-- Popup de favoritos (caso uses) -->
+  <!-- Popup de favoritos -->
   <div class="fav-popup" style="display:none;" id="favPopup">
     <div class="popup-content">
-      <span class="close-btn" onclick="document.getElementById('favPopup').style.display='none'">&times;</span>
+      <span class="close-btn" onclick="closeFavPopup()">&times;</span>
       <h3>Adicionar aos Favoritos</h3>
       <div class="popup-controls">
-        <button>Lista 1</button>
-        <button>Lista 2</button>
+        <select id="listDropdown"></select>
+        <button id="addToListButton">Adicionar</button>
       </div>
       <div class="create-new-list">
-        <input type="text" placeholder="Nova lista">
-        <button>Criar</button>
+        <button id="showCreateListButton">+ Criar Nova Lista</button>
+        <div id="newListInputContainer" class="newListInputContainer" style="display: none;">
+          <input type="text" id="newListName" placeholder="Nome da nova lista">
+          <button id="createListButton">Criar</button>
+        </div>
       </div>
     </div>
   </div>
+  
 
 </body>
 </html>
