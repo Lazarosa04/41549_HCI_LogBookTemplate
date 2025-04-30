@@ -79,6 +79,7 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 35px;
+    width: 600px;
   }
   
   .buttons {
@@ -110,10 +111,12 @@ body {
   }
   
   .play-button-container {
+    visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    margin-right: 150px;
   }
   
   .play-button {
@@ -247,5 +250,53 @@ body {
   
   .close-btn:hover {
     color: red;
+  }
+  
+  .temp-container {
+    background-color: #1669ce;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .season-episode-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  #seasonSelector {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #6cc4df;
+    width: 200px;
+  }
+  
+  .episodes-scroll-box {
+    background-color: #222;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  .episode-item {
+    margin-bottom: 10px;
+    padding: 10px 7px;
+    background-color: #333;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .episode-item:hover {
+    background-color: #444;
   }
   

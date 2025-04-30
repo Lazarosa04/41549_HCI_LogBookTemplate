@@ -12,12 +12,13 @@
   <div class="container">
     <!-- Informações do Filme -->
     <div class="info-section">
-      <h1>O Grande Mistério</h1>
-      <div class="details">2023 • 2h 10min • IMDb 8.5/10</div>
+      <h1>Dr House</h1>
+      <div class="details">2023 •  3 Temporadas • IMDb 8.5/10</div>
 
       <div class="genres">
         <span class="genre">Mystery</span>
         <span class="genre">Drama</span>
+        <span class="genre">Medical Drama</span>
       </div>
 
       <div class="section-title">Cast</div>
@@ -26,7 +27,7 @@
       <!-- Description -->
       <div class="section-title">Summary</div>
       <div class="summary-box">
-        Um detetive veterano enfrenta um caso intrincado quando um assassinato em série começa a imitar crimes do passado, levando-o por um caminho de segredos, suspense e revelações perturbadoras.
+        Um médico antisocial faz o que seja para resolver os casos mas difíceis que se encontra com a ajuda do equipe de médicos.
       </div>
 
       <!-- Div for Trailer and Add To List buttons -->
@@ -64,7 +65,24 @@
       </div>
     </div>
 
+    <!-- Seções de Temporadas e Episódios -->
+    <div class="temp-container">
+      <div class="season-episode-container">
+        <select id="seasonSelector" onchange="loadEpisodes(this.value)">
+          <option value="1">Temporada 1</option>
+          <option value="2">Temporada 2</option>
+          <option value="3">Temporada 3</option>
+        </select>
+
+        <div class="episodes-scroll-box" id="episodesBox">
+          <!-- Episódios vão ser carregados aqui via JS -->
+        </div>
+      </div>
+    </div>
+
+
   </div>
+  
 
 
   <script src="../js/movie.js"></script>

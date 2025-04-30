@@ -167,10 +167,13 @@ function carregarFilmes() {
         console.log("Filme:", filme.title, "Favorito?", isFavorite);
 
         movieItem.innerHTML = `
+        <a href="MoviePage.html?id=${filme.id}" style="text-decoration: none; color: inherit;">
             <img src="${filme.image}" alt="${filme.title}" />
             <p>${filme.title}</p>
-            <div class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorito(${filme.id})"></div>
-        `;
+        </a>
+        <div class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorito(${filme.id})"></div>
+    `;
+
         movieList.appendChild(movieItem);
     });
 }

@@ -16,9 +16,12 @@ if (filmesDaLista.length === 0) {
         const div = document.createElement("div");
         div.className = "filme-card";
         div.innerHTML = `
+        <a href="MoviePage.html?id=${filme.id}" style="text-decoration: none; color: white;">
             <img src="${filme.image}" alt="${filme.title}" width="100">
-            <p style="color: white;">${filme.title}</p>
-        `;
+            <p>${filme.title}</p>
+        </a>
+    `;
+
         container.appendChild(div);
     });
 }

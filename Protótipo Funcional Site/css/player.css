@@ -1,0 +1,15 @@
+ /* Botão Voltar atrás*/
+ .back-button {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background-color: rgba(43, 188, 214, 0.397);
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+  }
+  .back-button:hover {
+    background-color: rgba(0, 215, 253, 0.438);
+  }

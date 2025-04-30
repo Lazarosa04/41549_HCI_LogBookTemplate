@@ -71,3 +71,33 @@ function createNewList() {
     document.getElementById('newListName').value = "";
     document.getElementById('newListInputContainer').style.display = 'none';
 }
+
+const episodesData = {
+    1: ["Episódio 1: Diagnóstico", "Episódio 2: Mistério", "Episódio 3: O Dilema"],
+    2: ["Episódio 1: Retorno", "Episódio 2: Crise", "Episódio 3: Revelação", "Episódio 4: Decisão"],
+    3: ["Episódio 1: Colapso", "Episódio 2: Esperança", "Episódio 3: O Fim"]
+  };
+  
+  function loadEpisodes(season) {
+    const episodesBox = document.getElementById('episodesBox');
+    episodesBox.innerHTML = ""; // Limpa os anteriores
+
+    const episodes = episodesData[season] || [];
+    episodes.forEach((ep, index) => {  // Adicionamos o 'index' aqui
+        const button = document.createElement('button');
+        button.className = 'episode-item';
+        button.textContent = ep;
+        button.onclick = () => {
+            // Redireciona para o player.html com os parâmetros corretos
+            window.location.href = `player.html?season=${season}&episode=${index + 1}`; // Usamos o index aqui
+        };
+        episodesBox.appendChild(button);
+    });
+}
+
+  
+  // Carregar temporada 1 ao iniciar
+  window.addEventListener('DOMContentLoaded', () => {
+    loadEpisodes('1');
+  });
+  

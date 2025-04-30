@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Player do Episódio</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.1);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 80px);
+    }
+
+    iframe {
+      width: 90%;
+      height: 80vh;
+      border: none;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="javascript:history.back()" class="back-button">← Voltar</a>
+
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/b2AVqPH8V5M?autoplay=1" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
