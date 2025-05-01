@@ -161,6 +161,14 @@ function saveProfile() {
     localStorage.setItem('profileData', JSON.stringify(profileData));
 
     alert('Perfil guardado!');
+
+    if (window.location.pathname.includes("recommendation.html")) {
+        if (typeof loadRecommendations === 'function') {
+            loadRecommendations(); // Agora vai funcionar
+        }
+    }
+
+
     closeSidebar();
 }
 
