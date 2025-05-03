@@ -172,3 +172,23 @@ function saveProfile() {
     closeSidebar();
 }
 
+// Abre o menu lateral
+document.querySelector('.menu img').addEventListener('click', () => {
+    document.getElementById('menuSidebar').classList.add('open');
+});
+
+// Fecha o menu lateral
+function closeMenuSidebar() {
+    document.getElementById('menuSidebar').classList.remove('open');
+}
+
+function toggleDropdown(event) {
+    event.preventDefault();
+    const toggle = event.currentTarget;
+    const parent = toggle.parentElement;
+    const menu = parent.querySelector(".dropdown-menu");
+
+    menu.classList.toggle("hidden");
+    parent.classList.toggle("open");
+}
+
