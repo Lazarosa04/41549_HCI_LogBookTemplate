@@ -38,9 +38,18 @@ function toggleCheck(button) {
         button.innerText = '✔️';
         button.classList.add('checked');
         /** cria array com as imagens */
-        const movies = Array.from(movieImgs).map(img => img.src);
         /** dicionario categoria, array movies */
+        const movieItems = header.nextElementSibling.querySelectorAll('.movie-item');
+
+        const movies = Array.from(movieItems).map(item => {
+            return {
+                src: item.querySelector('img').src,
+                title: item.querySelector('.movie-title').innerText
+            };
+        });
+
         followed.push({ category, movies });
+
     }
 
     /** atualiza LocalStorage */

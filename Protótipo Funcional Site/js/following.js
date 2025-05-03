@@ -12,10 +12,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 <button class="popular_plus-button checked" onclick="removeFollowed('${category}', this)">✔️</button>
             </div>
             <div class="movie-row">
-                ${movies.map(src => `<img src="${src}" alt="Movie">`).join('')}
+                ${movies.map(movie => `
+                    <div class="movie-item">
+                        <img src="${movie.src}" alt="Movie">
+                        <p class="movie-title">${movie.title}</p>
+                    </div>
+                `).join('')}
+            
             </div>
         `;
-        
         container.appendChild(section);
     });
 
