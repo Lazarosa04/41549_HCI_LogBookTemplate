@@ -7,6 +7,58 @@
   <link rel="stylesheet" href="../css/MoviePage.css" />
 </head>
 <body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="menu">
+      <img src="../imgs/menu.png" alt="Menu">
+    </div>
+    <div class="logo">
+      <a href="index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+    </div>
+    <div class="mini-menu">
+      <div class="search">
+        <img src="../imgs/search.png" alt="Search">
+      </div>
+      <div class="settings">
+        <a href="settings.html"><img src="../imgs/settings.png" alt="Settings"></a>
+      </div>
+      <div class="profile">
+        <img src="../imgs/user.png" alt="Profile">
+      </div>
+    </div>
+  </div>
+
+<!-- Sidebar moderno -->
+<div class="menu-sidebar" id="menuSidebar">
+  <div class="menu-header">
+    <h2>Menu</h2>
+    <button class="close-btn" onclick="closeMenuSidebar()">✖</button>
+  </div>
+  <div class="menu-content">
+    <ul class="menu-list">
+      <li><a href="index.html"><img src="../imgs/random_img.png" alt="Home"><span>Início</span></a></li>
+      <li><a href="movies.html"><img src="../imgs/random_img.png" alt="Movies"><span>Movies</span></a></li>
+      <li><a href="series.html"><img src="../imgs/random_img.png" alt="Series"><span>Series</span></a></li>
+      <li><a href="recommendation.html"><img src="../imgs/random_img.png" alt="Recommendations"><span>Recommendations</span></a></li>
+
+      <li class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown(event)">
+          <img src="../imgs/random_img.png" alt="Lists"><span>Lists</span>
+          <span class="dropdown-arrow">▼</span>
+        </div>
+        <ul class="dropdown-menu hidden">
+          <li><a href="fav.html">My Lists</a></li>
+          <li><a href="following.html">Following</a></li>
+          <li><a href="popular.html">Popular</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  
     <a href="javascript:history.back()" class="back-button">← Voltar</a>
 
   <div class="container">
