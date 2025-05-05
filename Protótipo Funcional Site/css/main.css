@@ -1,5 +1,19 @@
+html, body {
+    min-width: 1400px; /* Largura mínima */
+    min-height: 1000px; /* Altura mínima */
+    overflow: auto; /* Adiciona barras de rolagem quando necessário */
+}
+
+body {
+    width: 99.96%;  /* não me perguntes*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .navbar {
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -23,7 +37,7 @@
 }
 
 .navbar .logo img {
-    height: 100%; /* Occupies the full height of the navbar */
+    height: 80px;
     width: auto; /* Maintains aspect ratio */
     object-fit: contain; /* Ensures the image scales proportionally */
 }
@@ -64,7 +78,7 @@
 }
 
 .carrossel {
-    height: 40vh; /* 33% da altura da página */
+    height: 33vh; /* % da altura da página */
     display: flex;
     position: relative;
     background-color: #00000027; /* Cor de fundo opcional */
@@ -79,31 +93,232 @@
     color: #333; /* Cor do texto */
 }
 
-.carrossel .description {
-    position: absolute;
-    bottom: 10px; /* Ajuste conforme necessário */
-    left: 10px; /* Ajuste conforme necessário */
-    font-size: 1rem;
-    color: #555; /* Cor do texto */
-    border: 2px solid #000; /* Borda preta */
-    padding: 10px; /* Espaçamento interno */
-    background-color: rgba(0, 255, 255, 0.253);
-    width: 25%; /* Largura de 33% do carrossel */
-    height: 30%;
-    
+
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    background-color: #000; /* Fundo opcional */
 }
 
-.carrossel img {
+.carousel .title img {
+    max-width: 400px; /* Limita a largura máxima */
+    max-height: 80px; /* Limita a altura máxima */
+    object-fit: contain; /* Garante que a imagem mantenha a proporção */
+    display: block;
+    margin: 0;
+}
+
+.carousel-button {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%; /* Ocupa toda a largura do carrossel */
-    z-index: -1; /* Coloca o background abaixo do título e descrição */
+    bottom: 10px; /* Move os botões para a parte inferior */
+    right: 10px; /* Alinha os botões no canto direito */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    margin-right: 50px; /* Adiciona espaço entre os botões */
+}
+
+.carousel-button.next {
+    margin-right: 0;
+}
+
+.carousel-track-container {
+    overflow: hidden;
     height: 100%;
-    background-size: cover; /* Garante que a imagem cubra o espaço */
-    background-position: center; /* Centraliza a imagem */
-    background-size: cover; /* Garante que a imagem ocupe todo o carrossel */
-    background-repeat: no-repeat; /* Evita repetição */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-slide .background {
+   width: 100%;
+   opacity: 0.7;
+   object-position: center -100px;
+   transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.carousel-slide .background:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+.carousel .title {
+    position: absolute;
+    top: 10px; /* Ajuste para o canto superior esquerdo */
+    left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra para melhor visibilidade */
+}
+
+.carousel .description {
+    position: absolute;
+    bottom: 10px; /* Ajuste para o canto inferior esquerdo */
+    left: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 43%;
+    max-width: 33%; /* Evita que a descrição ultrapasse a largura */
+    text-align: justify; /* Justifica o texto */
+}
+
+.section{
+    margin-bottom: 10px;
+}
+
+.main h1{
+    margin-bottom: 10px;
+    font-size:xx-large;
+    margin-left: 20px;
+    text-decoration: underline;
+    color:#000
+}
+
+.main{
+    background-color: #555;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    height: 200vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.main .list {
+    display: flex;
+    flex-direction: row; /* Alinha os itens em linha */
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Adiciona rolagem horizontal, se necessário */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+
+
+
+.main .list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 75%;
+    justify-content: flex-start; /* Garante alinhamento à esquerda */
+}
+
+.item {
+    width: 200px; 
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.movie-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px; /* Opcional: bordas arredondadas */
+}
+
+.movie-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05; /* Escala padrão */
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px; /* Tamanho padrão */
+    height: 50px; /* Tamanho padrão */
+    transform: translate(-50%, -50%); /* Garante que o ícone esteja centralizado */
+    opacity: 1; /* Opacidade padrão */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave para tamanho e opacidade */
+}
+
+.movie-container:hover .play-icon {
+    transform: translate(-50%, -50%) scale(1.3); /* Mantém o centro fixo e aumenta o tamanho */
+    opacity: 0.5; /* Reduz a opacidade para 50% */
+}
+
+.item a {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 0.8rem; /* Ajuste conforme necessário */
+    color: #000; /* Cor do texto */
+    text-decoration: none;
+}
+
+.section {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.trend {
+    width: 20%; /* Ajusta automaticamente à largura do conteúdo */
+    height: 100%; /* Ajusta automaticamente à altura do conteúdo */
+    overflow: visible; /* Permite que o conteúdo seja visível */
+    border-radius: 10px;
+    background: radial-gradient(circle, #0c0c0c, #2a2a2a); /* Gradiente radial */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;   
+}
+
+
+.trendTitle{
+    height: 35px;
+    text-align: center;
+    border-bottom: #000 solid 1px;
+    font-size: xx-large;
+}
+
+.trendItem{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.trendItem img{
+    margin-left: auto;
+}
+
+
+* {
+    border: 1px solid rgba(255, 0, 0, 0.5); /* Borda vermelha semitransparente */
 }
 
 

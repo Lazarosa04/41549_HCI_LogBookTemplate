@@ -1,3 +1,57 @@
+window.addEventListener("load", () => {
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.querySelector('.carousel-button.next');
+    const prevButton = document.querySelector('.carousel-button.prev');
+
+    const slideWidth = slides[0].getBoundingClientRect().width;
+
+    slides.forEach((slide, index) => {
+        slide.style.position = 'absolute';
+        slide.style.top = 0;
+        slide.style.left = `${slideWidth * index}px`;
+    });
+
+    track.style.position = 'relative';
+    track.style.transition = 'transform 0.5s ease-in-out';
+
+    const moveToSlide = (track, currentSlide, targetSlide) => {
+        const amountToMove = targetSlide.style.left;
+        track.style.transform = `translateX(-${amountToMove})`;
+        currentSlide.classList.remove('current-slide');
+        targetSlide.classList.add('current-slide');
+    };
+
+    const moveNext = () => {
+        const currentSlide = track.querySelector('.current-slide');
+        const nextSlide = currentSlide.nextElementSibling || slides[0];
+        moveToSlide(track, currentSlide, nextSlide);
+    };
+
+    const movePrev = () => {
+        const currentSlide = track.querySelector('.current-slide');
+        const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
+        moveToSlide(track, currentSlide, prevSlide);
+    };
+
+    let slideInterval = setInterval(moveNext, 10000);
+
+    const resetInterval = () => {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(moveNext, 10000);
+    };
+
+    nextButton.addEventListener('click', () => {
+        moveNext();
+        resetInterval();
+    });
+
+    prevButton.addEventListener('click', () => {
+        movePrev();
+        resetInterval();
+    });
+});
+
 
 window.addEventListener('DOMContentLoaded', () => {
     const savedProfile = localStorage.getItem('profileData');
