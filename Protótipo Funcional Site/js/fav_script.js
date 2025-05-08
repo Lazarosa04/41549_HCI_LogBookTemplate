@@ -135,6 +135,7 @@ function toggleFavorito(filmeId) {
         favoritosPorLista[currentListName] = listaAtual.filter(f => f.id !== filmeId);
     } else {
         favoritosPorLista[currentListName].push(filme);
+        alert(`"${filme.title}" foi adicionado aos favoritos da lista "${currentListName}".`);
     }
 
     /** "new list": Array [ {…} ]
@@ -146,7 +147,6 @@ function toggleFavorito(filmeId) {
     localStorage.setItem('favoritos', JSON.stringify(favoritosPorLista));
     /** voritos no localStorage após a alteração: ["O Senhor dos Anéis","O Senhor dos Anéis",{"title":"Jurassic Park","image":"https://via.placeholder.com/100x150?text=6","id":6},{"title":"O Senhor dos Anéis","image":"../imgs/random_img.png","id":1}] */
     console.log("Favoritos no localStorage após a alteração:", localStorage.getItem('favoritos'));
-
     // Atualiza a interface (carrega novamente os filmes e seus estados de favorito)
     carregarFilmes();
 }
