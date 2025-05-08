@@ -431,7 +431,7 @@ body {
 }
 
 .profile-bio textarea {
-    width: 100%;
+    width: 95%;
     height: 250px;
     resize: none;
     padding: 5px;
@@ -445,13 +445,13 @@ body {
 
 .profile-buttons button {
     margin-top: 15px;
-    padding: 15px 35px;
+    padding: 10px 25px;
     border: none;
     color: white;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 40px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .genre-selector {
