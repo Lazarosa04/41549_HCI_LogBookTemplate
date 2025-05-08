@@ -259,7 +259,7 @@ body {
     width: 50px; /* Tamanho padrão */
     height: 50px; /* Tamanho padrão */
     transform: translate(-50%, -50%); /* Garante que o ícone esteja centralizado */
-    opacity: 1; /* Opacidade padrão */
+    opacity: 0.9; /* Opacidade padrão */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave para tamanho e opacidade */
 }
 
