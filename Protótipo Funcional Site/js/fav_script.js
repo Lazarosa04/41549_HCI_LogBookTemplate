@@ -91,16 +91,16 @@ function fecharPopup() {
 }
 
 let filmes = [
-    { title: "O Senhor dos Anéis", image: "../imgs/random_img.png", id: 1 },
-    { title: "Matrix", image: "../imgs/random_img.png", id: 2 },
-    { title: "Star Wars", image: "../imgs/random_img.png", id: 3 },
-    { title: "Avatar", image: "../imgs/random_img.png", id: 4 },
-    { title: "Vingadores", image: "../imgs/random_img.png", id: 5 },
-    { title: "Jurassic Park", image: "../imgs/random_img.png", id: 6 },
-    { title: "One Piece", image: "../imgs/random_img.png", id: 7 },
-    { title: "Last Of Us", image: "../imgs/random_img.png", id: 8 },
-    { title: "Dr House", image: "../imgs/random_img.png", id: 9 },
-    { title: "Stranger Things", image: "../imgs/random_img.png", id: 10 },
+    { title: "O Senhor dos Anéis", image: "../imgs/movies/FavPopUp/SenhorAneis.jpg", id: 1 },
+    { title: "Matrix", image: "../imgs/movies/FavPopUp/Matrix.jpg", id: 2 },
+    { title: "Star Wars", image: "../imgs/movies/Star Wars/StarWars.jpg", id: 3 },
+    { title: "Avatar", image: "../imgs/movies//FavPopUp/Avatar.jpg", id: 4 },
+    { title: "Vingadores", image: "../imgs/movies/Marvel/AvengersEndGame.jpg", id: 5 },
+    { title: "Jurassic Park", image: "../imgs/movies//FavPopUp/JurassicPark.jpg", id: 6 },
+    { title: "One Piece", image: "../imgs/movies//FavPopUp/OnePiece.jpg", id: 7 },
+    { title: "The Last Of Us", image: "../imgs/movies//FavPopUp/LastOfUs.jpg", id: 8 },
+    { title: "Dr House", image: "../imgs/movies//FavPopUp/DrHouse.jpg", id: 9 },
+    { title: "Stranger Things", image: "../imgs/movies//FavPopUp/StrangerThings.jpg", id: 10 },
 ];
 
 function toggleFavorito(filmeId) {
