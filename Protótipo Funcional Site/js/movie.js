@@ -35,9 +35,9 @@ function addMovieToList() {
 
     // Aqui metes o objeto do filme atual
     const filme = {
-        title: "O Grande Mistério", // poderias dinamizar
+        title: "Dr House", // poderias dinamizar
         image: "../imgs/random_img.png",
-        id: 99 // gera ou atribui o id correto
+        id: 9 // gera ou atribui o id correto
     };
 
     favoritos[selectedList].push(filme);
@@ -100,79 +100,3 @@ const episodesData = {
   window.addEventListener('DOMContentLoaded', () => {
     loadEpisodes('1');
   });
-
-  // Para NavBar
-  // Abre o menu lateral
-document.querySelector('.menu img')?.addEventListener('click', () => {
-    document.getElementById('menuSidebar').classList.add('open');
-});
-
-// Fecha o menu lateral
-function closeMenuSidebar() {
-    document.getElementById('menuSidebar').classList.remove('open');
-}
-
-// Abre o perfil
-document.querySelector('.profile')?.addEventListener('click', () => {
-    document.getElementById('profileSidebar').classList.add('open');
-});
-
-// Fecha o perfil
-function closeSidebar() {
-    document.getElementById('profileSidebar').classList.remove('open');
-    const genreSelector = document.getElementById('genreSelector');
-    if (genreSelector) genreSelector.classList.add('hidden');
-    resetProfileForm();
-}
-
-// Restaura os dados do perfil
-function resetProfileForm() {
-    const savedProfile = localStorage.getItem('profileData');
-    const genresList = document.getElementById('genresList');
-    if (savedProfile) {
-        const profile = JSON.parse(savedProfile);
-
-        document.getElementById('profileName').value = profile.name || '';
-        document.getElementById('profileBio').value = profile.bio || '';
-
-        genresList.innerHTML = '';
-        if (profile.genres && profile.genres.length > 0) {
-            profile.genres.forEach(genre => {
-                const genreTag = document.createElement('div');
-                genreTag.className = 'genre-tag';
-                genreTag.innerText = genre;
-
-                genreTag.addEventListener('click', () => {
-                    genresList.removeChild(genreTag);
-                });
-
-                genreTag.style.backgroundColor = getRandomColor();
-
-                genresList.appendChild(genreTag);
-            });
-        }
-    } else {
-        document.getElementById('profileName').value = '';
-        document.getElementById('profileBio').value = '';
-        genresList.innerHTML = '';
-    }
-}
-
-function getRandomColor() {
-    const colors = [
-        '#FFF176', '#81C784', '#81D4FA', '#F8BBD0', '#CE93D8', '#FFB74D'
-    ];
-    return colors[Math.floor(Math.random() * colors.length)];
-}
-
-// Botão menu
-function toggleDropdown(event) {
-    event.preventDefault();
-    const toggle = event.currentTarget;
-    const parent = toggle.parentElement;
-    const menu = parent.querySelector(".dropdown-menu");
-
-    menu.classList.toggle("hidden");
-    parent.classList.toggle("open");
-}
-  
