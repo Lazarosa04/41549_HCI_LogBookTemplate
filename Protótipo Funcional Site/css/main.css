@@ -1,3 +1,7 @@
+* {
+    border: 1px solid rgba(255, 0, 0, 0.5); /* Borda vermelha semitransparente */
+}
+
 html, body {
     min-width: 1400px; /* Largura mínima */
     min-height: 1000px; /* Altura mínima */
@@ -259,7 +263,7 @@ body {
     width: 50px; /* Tamanho padrão */
     height: 50px; /* Tamanho padrão */
     transform: translate(-50%, -50%); /* Garante que o ícone esteja centralizado */
-    opacity: 1; /* Opacidade padrão */
+    opacity: 0.9; /* Opacidade padrão */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave para tamanho e opacidade */
 }
 
@@ -314,11 +318,6 @@ body {
 
 .trendItem img{
     margin-left: auto;
-}
-
-
-* {
-    border: 1px solid rgba(255, 0, 0, 0.5); /* Borda vermelha semitransparente */
 }
 
 
@@ -431,8 +430,8 @@ body {
 }
 
 .profile-bio textarea {
-    width: 100%;
-    height: 250px;
+    width: 95%;
+    height: 210px;
     resize: none;
     padding: 5px;
 }
@@ -445,13 +444,13 @@ body {
 
 .profile-buttons button {
     margin-top: 15px;
-    padding: 15px 35px;
+    padding: 10px 25px;
     border: none;
     color: white;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 40px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .genre-selector {
@@ -522,7 +521,7 @@ body {
 }
 
 .menu-content li {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .menu-content a {
@@ -631,3 +630,7 @@ body {
     height: 24px;
     object-fit: contain;
 }
+
+
+
+
