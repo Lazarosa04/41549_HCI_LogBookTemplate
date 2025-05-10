@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+<body style="background-color: #002572; font-family: 'Rubik', sans-serif;">
+
+    <div class = "navbar">
+        <div class = "menu">
+            <img src="../imgs/menu.png" alt="Menu">
+
+        </div>
+        <div class  = "logo">
+            <a href="index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+        </div>
+        <div class = mini-menu>
+            <div class = "search">
+                <img src="../imgs/search.png" alt="Search">
+            
+            </div>
+            <div class = "settings">
+                <a href="settings.html"><img src="../imgs/settings.png" alt="Settings"></a>
+            </div>
+            <div class = "profile">
+                <img src="../imgs/user.png" alt="Profile">
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <h1 style="color: azure;">Os teus Resultados da pesquisa</h1>
+    <div id="recommendationsContainer"></div>
+
+    <div class="profile-sidebar" id="profileSidebar">
+        <div class="profile-header">
+            <div class="profile-pic-container">
+                <img id="profilePicture" src="../imgs/user.png" alt="Foto de Perfil">
+                <input type="file" id="profilePicInput" style="display: none;">
+            </div>
+            <div class="profile-name-edit">
+                <input type="text" id="profileName" placeholder="Nome">
+            </div>
+            <button class="close-btn" onclick="closeSidebar()">✖</button>
+        </div>
+        
+        <div class="profile-content">
+            <div class="profile-genres">
+                <h3>Favorite Genres:</h3>
+                <button class="add-genre-btn" onclick="showGenreOptions()">+ Add Genre</button>
+                <div id="genresList" class="genres-list">
+                    <!-- Géneros aparecem aqui -->
+                </div>
+            </div>
+        </div>
+    
+        <div class="profile-bio">
+            <h3>Bibliography:</h3>
+            <textarea id="profileBio" placeholder="Escreve algo sobre ti..."></textarea>
+        </div>
+    
+        <div class="profile-buttons">
+            <button onclick="saveProfile()" style="background-color: rgb(133, 223, 30);" >Save</button>
+            <button onclick="closeSidebar()" style="background-color: rgb(235, 55, 10);" >Cancel</button>
+        </div>
+    
+        <!-- Selector de géneros escondido -->
+        <div id="genreSelector" class="genre-selector hidden">
+            <div onclick="addGenre('Action')">Action</div>
+            <div onclick="addGenre('Drama')">Drama</div>
+            <div onclick="addGenre('Comedy')">Comedy</div>
+            <div onclick="addGenre('Horror')">Horror</div>
+            <div onclick="addGenre('Sci-Fi')">Sci-Fi</div>
+            <!-- Adiciona mais géneros que quiseres -->
+        </div>
+    </div>
+
+    <div class="menu-sidebar" id="menuSidebar">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="close-btn" onclick="closeMenuSidebar()">✖</button>
+        </div>
+        <div class="menu-content">
+            <ul class="menu-list">
+                <li><a href="index.html"><img src="../imgs/icons/Home.png" alt="Home"><span>Início</span></a></li>
+                <li><a href="movies.html"><img src="../imgs/icons/popcorn.png" alt="Movies"><span>Movies</span></a></li>
+                <li><a href="series.html"><img src="../imgs/icons/Series.png" alt="Series"><span>Series</span></a></li>
+                <li><a href="recommendation.html"><img src="../imgs/icons/compass.png" alt="Recommendations"><span>Recommendations</span></a></li>
+                
+                <li class="dropdown">
+                    <div class="dropdown-toggle" onclick="toggleDropdown(event)">
+                        <img src="../imgs/random_img.png" alt="Lists"><span>Lists</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <ul class="dropdown-menu hidden">
+                        <li><a href="fav.html">My Lists</a></li>
+                        <li><a href="following.html">Following</a></li>
+                        <li><a href="popular.html">Popular</a></li>
+                    </ul>
+                </li>
+            </ul>            
+            
+            
+        </div>
+    </div>
+
+    <script src="../js/search.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

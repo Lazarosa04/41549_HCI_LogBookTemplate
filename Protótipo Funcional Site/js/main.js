@@ -281,3 +281,31 @@ document.querySelectorAll('.genre-btn').forEach(button => {
       button.classList.toggle('selected');
     });
   });
+
+  // Ao clicar no botão "Search"
+document.getElementById("searchButton").addEventListener("click", () => {
+    const searchTerm = document.getElementById("searchInput").value.trim();
+    const params = new URLSearchParams();
+    if (searchTerm) params.append("search", searchTerm);
+    window.location.href = `search.html?${params.toString()}`;
+});
+
+// Ao clicar no botão "Filter"
+document.querySelector("#filter-modal .actions button:not(#cancel-btn)").addEventListener("click", () => {
+    const selects = document.querySelectorAll("#filter-modal select");
+    const params = new URLSearchParams();
+
+    // Adiciona os selects à query
+    selects.forEach(select => {
+        const label = select.closest("label").textContent.trim().split(":")[0].toLowerCase();
+        params.append(label, select.value);
+    });
+
+    // Adiciona os géneros selecionados
+    const selectedGenres = Array.from(document.querySelectorAll(".genre-btn.selected")).map(btn => btn.textContent);
+    if (selectedGenres.length > 0) {
+        params.append("genres", selectedGenres.join(","));
+    }
+
+    window.location.href = `search.html?${params.toString()}`;
+});
