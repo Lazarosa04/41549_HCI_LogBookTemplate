@@ -31,7 +31,7 @@
 }
 
 /* Barra de pesquisa (input e botão) */
-.search-bar {
+.search-bar2 {
     display: flex;
     align-items: center;
     gap: 10px; /* Espaço entre o input e o botão */

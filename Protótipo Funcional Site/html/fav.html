@@ -33,12 +33,93 @@
             </div>
         </div>
     </div>
+
+    <div class="search-bar hidden" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton"><img src="../imgs/search.png" alt="Search"></button>
+        <button id="filterButton">Filter</button>
+
+        <!-- Modal de filtros (escondido por padrão) -->
+    <div id="filter-modal" class="filter-modal" style="display: none;">
+        <div class="dropdowns">
+          <label>Type:
+            <select>
+              <option>All</option>
+              <option>Movie</option>
+              <option>Serie</option>
+              <option>Anime</option>
+            </select>
+          </label>
+    
+          <label>Rated:
+            <select>
+              <option>All</option>
+              <option>1+</option>
+              <option>2+</option>
+              <option>3+</option>
+              <option>4+</option>
+              <option>5+</option>
+              <option>6+</option>
+              <option>7+</option>
+              <option>8+</option>
+              <option>9+</option>
+            </select>
+          </label>
+    
+          <label>Sort:
+            <select>
+              <option>Name A-Z</option>
+              <option>Recently Updated</option>
+              <option>Score</option>
+              <option>Most Watched</option>
+            </select>
+          </label>
+
+          <label>Duration:
+            <select>
+                <option>&lt;30min</option>
+                <option>&lt;50min</option>
+                <option>&lt;70min</option>
+                <option>&lt;120min</option>
+            </select>
+        </label>
+
+        <label>Year:
+            <select>
+                <option>&lt;2000&gt;</option>
+                <option>&lt;2001&gt;</option>
+                <option>&lt;2002&gt;</option>
+                <option>&lt;2003&gt;</option>
+            </select>
+        </label>
+        </div>
+
+        <h3>Genres:</h3>
+        <div class="genres">
+          <button class="genre-btn">Romance</button>
+          <button class="genre-btn">Action</button>
+          <button class="genre-btn">Adventure</button>
+          <button class="genre-btn">Sci-fi</button>
+          <button class="genre-btn">Comedy</button>
+          <button class="genre-btn">Drama</button>
+          <button class="genre-btn">Supernatural</button>
+          <button class="genre-btn">Thriller</button>
+          <button class="genre-btn">Terror</button>
+        </div>
+
+        <div class="actions">
+            <button id="cancel-btn">Cancel</button>
+            <button>Filter</button>
+          </div>
+      </div>
+    </div>    
+
     
     <div class="list-tools-container">
         <!-- search listas -->
         <div class="search-container">
             <h1>Search Lists</h1>
-            <div class="search-bar">
+            <div class="search-bar2">
                 <input type="text" id="searchInput" placeholder="Search...">
                 <button onclick="buscar()">🔍</button>
             </div>
