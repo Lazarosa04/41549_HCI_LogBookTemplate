@@ -246,3 +246,38 @@ function toggleDropdown(event) {
     parent.classList.toggle("open");
 }
 
+
+document.querySelector('.search').addEventListener('click', function () {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('hidden');
+});
+
+document.getElementById('searchInput').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        performSearch();
+    }
+});
+
+document.getElementById('searchButton').addEventListener('click', performSearch);
+
+function performSearch() {
+    const query = document.getElementById('searchInput').value.trim();
+    if (query) {
+        // Aqui podes redirecionar para uma página ou fazer uma pesquisa
+        console.log("Searching for:", query);
+        // Exemplo: window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+    }
+}
+
+
+
+document.getElementById('filterButton').addEventListener('click', function() {
+    const modal = document.querySelector('.filter-modal');
+    modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
+});
+
+document.querySelectorAll('.genre-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('selected');
+    });
+  });
