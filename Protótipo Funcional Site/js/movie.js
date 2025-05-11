@@ -36,7 +36,7 @@ function addMovieToList() {
     // Aqui metes o objeto do filme atual
     const filme = {
         title: "Dr House", // poderias dinamizar
-        image: "../imgs/random_img.png",
+        image: "../imgs/movies/FavPopUp/DrHouse.jpg",
         id: 9 // gera ou atribui o id correto
     };
 
