@@ -289,37 +289,66 @@ body {
     flex-direction: row;
 }
 
+/* Trend */
 .trend {
-    width: 20%; /* Ajusta automaticamente à largura do conteúdo */
-    height: 100%; /* Ajusta automaticamente à altura do conteúdo */
-    overflow: visible; /* Permite que o conteúdo seja visível */
+    width: 20%; /* largura consistente */
+    background: radial-gradient(circle, #1a1a1a, #2a2a2a);
     border-radius: 10px;
-    background: radial-gradient(circle, #0c0c0c, #2a2a2a); /* Gradiente radial */
+    padding: 15px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    margin-right: 10px;
+    gap: 10px;
     position: absolute;
-    right: 0;   
+    overflow: visible;
+    margin-right: 15px;
+    margin-top: 70px;
+    right: 0;
 }
 
-
-.trendTitle{
-    height: 35px;
+.trendTitle {
     text-align: center;
-    border-bottom: #000 solid 1px;
-    font-size: xx-large;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    color: #fff;
 }
 
-.trendItem{
+.trendList {
     display: flex;
-    flex-direction: row;
-    height: 80px;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.trendItem img{
-    margin-left: auto;
+.trendItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: #ccc;
+    font-size: 25px;
+    transition: background 0.3s;
+    height: 80px; /* mais quadrado */
 }
+
+.trendItem:hover {
+    background-color: #222;
+}
+
+.trendItem img {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    /* Removido o filtro para manter cor natural */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    margin-left: 12px;
+}
+
+
 
 
 /* perfil*/
@@ -632,10 +661,7 @@ body {
     object-fit: contain;
 }
 
-
-
-
-
+/* Search bar style*/
 .search-bar {
     position: absolute;
     z-index: 1000; /* maior que a navbar */
@@ -678,6 +704,8 @@ body {
     height: 100%;
 }
 
+
+/*Filter style*/
 #filterButton {
     background-color: #eee;
     border: none;
