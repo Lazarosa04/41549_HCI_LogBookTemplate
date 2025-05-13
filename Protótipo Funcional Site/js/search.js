@@ -3,6 +3,7 @@
 const allContent = [
     { title: "Avengers", genres: ["Action", "Sci-Fi"] },
         { title: "The Notebook", genres: ["Drama", "Romance"] },
+        { title: "Dr House", genres: ["Drama", "Mystery"] },
         { title: "Superbad", genres: ["Comedy"] },
         { title: "Insidious", genres: ["Horror", "Thriller"] },
         { title: "Interstellar", genres: ["Sci-Fi", "Drama"] },
@@ -70,17 +71,25 @@ container.innerHTML = "";
 
 if (filteredContent.length > 0) {
     filteredContent.forEach(item => {
-        const card = document.createElement("div");
-        card.className = "recommendation-card";
-        card.innerHTML = `
-            <img src="../imgs/random_img.png" alt="Imagem do Filme">
-            <div class="card-info">
-                <h3>${item.title}</h3>
-                <div class="genre-tags">${item.genres.join(", ")}</div>
-            </div>
-        `;
-        container.appendChild(card);
-    });
+    const card = document.createElement("div");
+    card.className = "recommendation-card";
+
+    // Cria o link para MoviePage.html com o título como parâmetro
+    const link = document.createElement("a");
+    link.href = `MoviePage.html?title=${encodeURIComponent(item.title)}`;
+    link.innerHTML = `
+        <img src="../imgs/random_img.png" alt="Imagem do Filme">
+        <div class="card-info">
+            <h3>${item.title}</h3>
+            <div class="genre-tags">${item.genres.join(", ")}</div>
+        </div>
+    `;
+
+    // Adiciona o link ao card
+    card.appendChild(link);
+    container.appendChild(card);
+});
+
 } else {
     container.innerHTML = `
         <div class="no-results">
