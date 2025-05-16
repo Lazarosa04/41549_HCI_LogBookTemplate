@@ -814,21 +814,22 @@ body {
     justify-content: center;
 }
 
-.filter-modal .genre-btn {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 10px 15px;
-    border-radius: 25px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+.genre-btn {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.filter-modal .genre-btn:hover {
-    background-color: green;
-    color: #fff;
+.genre-btn:hover {
+  background-color: green;
+  color: #fff;
 }
+
 
 /* Ações (Cancelar e Salvar) */
 .filter-modal .actions {
