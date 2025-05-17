@@ -48,10 +48,24 @@ function toggleCheck(button) {
             };
         });
 
+        showToast("Added to Following!");
         followed.push({ category, movies });
 
     }
 
     /** atualiza LocalStorage */
     localStorage.setItem('followedCategories', JSON.stringify(followed));
+}
+
+function showToast(message = "Added to Following!") {
+    const toast = document.getElementById("toast");
+
+    toast.textContent = message;
+    toast.classList.remove("hidden");
+    toast.classList.add("visible");
+
+    setTimeout(() => {
+        toast.classList.add("hidden");
+        toast.classList.remove("visible");
+    }, 2000);
 }
