@@ -171,7 +171,7 @@ function carregarFilmes() {
             <img src="${filme.image}" alt="${filme.title}" />
             <p>${filme.title}</p>
         </a>
-        <div class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorito(${filme.id})"></div>
+        <div class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorito(${filme.id})">${isFavorite ? '✔' : '+'}</div>
     `;
 
         movieList.appendChild(movieItem);

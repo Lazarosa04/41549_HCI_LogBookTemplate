@@ -212,3 +212,20 @@
     cursor: pointer;
 }
 
+.favorite-btn {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+}
+
+.favorite-btn.active {
+  background-color: red;
+  color: white;
+}
