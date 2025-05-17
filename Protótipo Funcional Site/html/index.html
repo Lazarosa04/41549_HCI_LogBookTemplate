@@ -20,6 +20,12 @@
                 <img src="../imgs/search.png" alt="Search">
             
             </div>
+            <div class="MyLists">
+                <a href="fav.html">
+                    <img src="../imgs/icons/Favorite.png" alt="MyLists">
+                </a>
+            </div>
+
             <div class = "settings">
                 <a href="settings.html"><img src="../imgs/settings.png" alt="Settings"></a>
             </div>
@@ -112,10 +118,7 @@
       </div>
     </div>    
 
-    
-
-  
-      
+    <!-- Carousel -->
     <div class="carousel">
         <button class="carousel-button prev">❮</button>
         <div class="carousel-track-container">
@@ -139,6 +142,8 @@
         </div>
         <button class="carousel-button next">❯</button>
     </div>
+
+
     <div class="main">
         <h1>Recently added movies:</h1>
         <!-- Row of movie 1 and Trending -->
@@ -445,13 +450,7 @@
         </div>
     </div>
 
-    
-    
-
-
-    
-    
-
+    <!-- Menu -->
     <div class="menu-sidebar" id="menuSidebar">
         <div class="menu-header">
             <h2>Menu</h2>
@@ -481,7 +480,7 @@
         </div>
     </div>
 
-
+    <!-- Profile -->
     <div class="profile-sidebar" id="profileSidebar">
         <div class="profile-header">
             <div class="profile-pic-container">
@@ -496,12 +495,21 @@
         
         <div class="profile-content">
             <div class="profile-genres">
-                <h3>Favorite Genres:</h3>
-                <button class="add-genre-btn" onclick="showGenreOptions()">+ Add Genre</button>
-                <div id="genresList" class="genres-list">
-                    <!-- Géneros aparecem aqui -->
-                </div>
-            </div>
+    <h3>Favorite Genres:</h3>
+    <!-- Substituição direta pela nova versão de filtros -->
+        <div class="genres">
+          <button class="genre-btn">Romance</button>
+          <button class="genre-btn">Action</button>
+          <button class="genre-btn">Adventure</button>
+          <button class="genre-btn">Sci-fi</button>
+          <button class="genre-btn">Comedy</button>
+          <button class="genre-btn">Drama</button>
+          <button class="genre-btn">Supernatural</button>
+          <button class="genre-btn">Thriller</button>
+          <button class="genre-btn">Terror</button>
+        </div>
+</div>
+
         </div>
     
         <div class="profile-bio">
@@ -514,15 +522,7 @@
             <button onclick="closeSidebar()" style="background-color: rgb(235, 55, 10);" >Cancel</button>
         </div>
     
-        <!-- Selector de géneros escondido -->
-        <div id="genreSelector" class="genre-selector hidden">
-            <div onclick="addGenre('Action')">Action</div>
-            <div onclick="addGenre('Drama')">Drama</div>
-            <div onclick="addGenre('Comedy')">Comedy</div>
-            <div onclick="addGenre('Horror')">Horror</div>
-            <div onclick="addGenre('Sci-Fi')">Sci-Fi</div>
-            <!-- Adiciona mais géneros que quiseres -->
-        </div>
+        
     </div>
     
     <script src="../js/main.js"></script>
