@@ -155,27 +155,36 @@ function showGenreOptions() {
     genreSelector.classList.toggle('hidden');
 }
 
-function addGenre(genre) {
-    const existingGenres = Array.from(genresList.children).map(g => g.innerText);
-    if (existingGenres.includes(genre)) {
-        return;
-    }
+function toggleGenreSelection(element) {
+    element.classList.toggle('selected');
+}
 
-    const genreTag = document.createElement('div');
-    genreTag.className = 'genre-tag';
-    genreTag.innerText = genre;
+function confirmGenreSelection() {
+    const selected = document.querySelectorAll('#genreSelector .genre-option.selected');
+    selected.forEach(el => {
+        const genre = el.innerText;
+        const existingGenres = Array.from(genresList.children).map(g => g.innerText);
+        if (!existingGenres.includes(genre)) {
+            const genreTag = document.createElement('div');
+            genreTag.className = 'genre-tag';
+            genreTag.innerText = genre;
 
-    // Dar uma cor aleatória de fundo
-    genreTag.style.backgroundColor = getRandomColor();
+            // Cor aleatória
+            genreTag.style.backgroundColor = getRandomColor();
 
-    // Adicionar evento para remover o género ao clicar
-    genreTag.addEventListener('click', () => {
-        genresList.removeChild(genreTag);
+            genreTag.addEventListener('click', () => {
+                genresList.removeChild(genreTag);
+            });
+
+            genresList.appendChild(genreTag);
+        }
+        // Desmarca após adicionar
+        el.classList.remove('selected');
     });
 
-    genresList.appendChild(genreTag);
     genreSelector.classList.add('hidden');
 }
+
 
 
 // Função para gerar uma cor aleatória

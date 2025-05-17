@@ -346,6 +346,7 @@
     </div>
 
 
+    <!-- Profile -->
     <div class="profile-sidebar" id="profileSidebar">
         <div class="profile-header">
             <div class="profile-pic-container">
@@ -360,12 +361,13 @@
         
         <div class="profile-content">
             <div class="profile-genres">
-                <h3>Favorite Genres:</h3>
-                <button class="add-genre-btn" onclick="showGenreOptions()">+ Add Genre</button>
-                <div id="genresList" class="genres-list">
-                    <!-- Géneros aparecem aqui -->
-                </div>
+            <h3>Favorite Genres:</h3>
+            <button class="add-genre-btn" onclick="showGenreOptions()">+ Add Genre</button>
+            <div id="genresList" class="genres-list">
+                <!-- Géneros aparecem aqui -->
             </div>
+        </div>
+
         </div>
     
         <div class="profile-bio">
@@ -377,16 +379,26 @@
             <button onclick="saveProfile()" style="background-color: rgb(133, 223, 30);" >Save</button>
             <button onclick="closeSidebar()" style="background-color: rgb(235, 55, 10);" >Cancel</button>
         </div>
-    
+        
         <!-- Selector de géneros escondido -->
-        <div id="genreSelector" class="genre-selector hidden">
-            <div onclick="addGenre('Action')">Action</div>
-            <div onclick="addGenre('Drama')">Drama</div>
-            <div onclick="addGenre('Comedy')">Comedy</div>
-            <div onclick="addGenre('Horror')">Horror</div>
-            <div onclick="addGenre('Sci-Fi')">Sci-Fi</div>
-            <!-- Adiciona mais géneros que quiseres -->
+        <div class="genre-popup hidden" id="genreSelector">
+            <div class="genre-selector">
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Action</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Drama</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Comedy</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Horror</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Sci-Fi</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Romance</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Adventure</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Supernatural</div>
+                <div class="genre-option" onclick="toggleGenreSelection(this)">Thriller</div>
+                <!-- Mais géneros -->
+            </div>
+            <button class="genre-ok-btn" onclick="confirmGenreSelection()">OK</button>
         </div>
+
+
+        
     </div>
     
     <script src="../js/main.js"></script>
