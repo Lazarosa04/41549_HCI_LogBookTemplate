@@ -53,12 +53,14 @@
     ];
 
     function loadRecommendations() {
+        const genreDisplay = document.getElementById('selectedGenres');
         const container = document.getElementById('recommendationsContainer');
         container.innerHTML = ''; // limpa recomendações anteriores
     
         const profile = JSON.parse(localStorage.getItem('profileData'));
     
         if (profile && profile.genres && profile.genres.length > 0) {
+            genreDisplay.textContent = `(${profile.genres.join(', ')})`;
             const recommended = allContent.filter(item =>
                 item.genres.some(genre => profile.genres.includes(genre))
             );
@@ -86,10 +88,10 @@
                     <p>Vai ao <strong>perfil</strong> e escolhe os géneros de que gostas para receber sugestões personalizadas!</p>
                 </div>
             `;
+            genreDisplay.textContent = '';
         }
     }
 
     document.addEventListener('DOMContentLoaded', () => {
         loadRecommendations(); // isto agora funciona porque a função existe antes
     });
-    
