@@ -84,3 +84,24 @@
 .back-button:hover {
     background-color: #6deb3b;
 }
+
+#movies-container {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;         /* Permite múltiplos itens em várias linhas */
+  gap: 20px;               /* Espaço entre os filmes */
+}
+.filme-card {
+  flex: 0 1 150px;
+  background-color: #123456;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+
+  display: flex;           /* torna flex container */
+  flex-direction: column;  /* itens em coluna: imagem em cima, título em baixo */
+  justify-content: center; /* alinha verticalmente no centro */
+  align-items: center;     /* alinha horizontalmente no centro */
+  text-align: center;      /* centra o texto do parágrafo */
+}
+
