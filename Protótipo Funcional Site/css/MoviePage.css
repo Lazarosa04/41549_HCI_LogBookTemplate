@@ -58,7 +58,7 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   background-color: #141414;
-  background-image: url('../imgs/sherk.jpg');
+  background-image: url('../imgs/DrHouse.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -295,7 +295,7 @@ body {
   }
   
   .temp-container {
-    background-color: #1669ce;
+    background-color: #9298a1;
     padding: 10px;
     border-radius: 6px;
   }
@@ -311,7 +311,7 @@ body {
     font-size: 1em;
     border-radius: 6px;
     border: 1px solid #ccc;
-    background-color: #6cc4df;
+    background-color: #a0d7e8;
     width: 200px;
   }
   
