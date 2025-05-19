@@ -83,7 +83,6 @@
     align-items: center;
     width: 100px; /* Ajusta conforme o tamanho da imagem */
     margin-left: 37px;
-    
 }
 
 .movie-title {
@@ -126,4 +125,15 @@
 .toast.hidden {
     visibility: hidden;
     opacity: 0;
+}
+
+.movie-item a {
+    text-decoration: none;
+    color: inherit; /* opcional, para manter a cor do texto original */
+}
+
+.movie-title {
+    display: block;
+    white-space: normal;
+    word-break: break-word;
 }

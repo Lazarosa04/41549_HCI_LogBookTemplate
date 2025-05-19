@@ -20,8 +20,10 @@ window.addEventListener('DOMContentLoaded', () => {
             <div class="movie-row">
                 ${movies.map(movie => `
                     <div class="movie-item">
-                        <img src="${movie.src}" alt="Movie">
-                        <p class="movie-title">${movie.title}</p>
+                        <a href="MoviePage.html">
+                            <img src="${movie.src}" alt="Movie">
+                            <p class="movie-title">${movie.title}</p>
+                        </a>
                     </div>
                 `).join('')}
             </div>
