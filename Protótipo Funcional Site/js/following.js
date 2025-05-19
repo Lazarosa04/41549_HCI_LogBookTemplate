@@ -1,6 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
     const followed = JSON.parse(localStorage.getItem('followedCategories')) || [];
-    const container = document.createElement('div');
+    const container = document.getElementById('followedLists');
+    container.innerHTML = ''; // limpa conteúdo anterior
+
+    if (followed.length === 0) {
+        container.innerHTML = '<p style="color:white">No followed lists.</p>';
+        return;
+    }
 
     followed.forEach(({ category, movies }) => {
         const section = document.createElement('div');
@@ -18,14 +24,12 @@ window.addEventListener('DOMContentLoaded', () => {
                         <p class="movie-title">${movie.title}</p>
                     </div>
                 `).join('')}
-            
             </div>
         `;
         container.appendChild(section);
     });
-
-    document.body.appendChild(container);
 });
+
 
 
 function removeFollowed(category, button) {
