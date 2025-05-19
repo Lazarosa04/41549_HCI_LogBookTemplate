@@ -258,7 +258,21 @@ function toggleDropdown(event) {
 
 document.querySelector('.search').addEventListener('click', function () {
     const bar = document.getElementById('searchBar');
-    bar.classList.toggle('hidden');
+
+    const profileSidebar = document.getElementById('profileSidebar');
+    const menuSidebar = document.getElementById('menuSidebar');
+
+
+    // fechar menu e perfil
+    const isOpen = !bar.classList.contains('hidden');
+
+    if (isOpen) {
+        bar.classList.add('hidden');
+    } else {
+        bar.classList.remove('hidden');
+        profileSidebar.classList.remove('open');
+        menuSidebar.classList.remove('open');
+    }
 });
 
 document.getElementById('searchInput').addEventListener('keypress', function (e) {
@@ -317,4 +331,40 @@ document.querySelector("#filter-modal .actions button:not(#cancel-btn)").addEven
     }
 
     window.location.href = `search.html?${params.toString()}`;
+});
+
+
+const menuSidebar = document.getElementById('menuSidebar');
+// Ao clicar no ícone de perfil// Ao clicar no ícone de perfil
+profileIcon.addEventListener('click', () => {
+    sidebar.classList.add('open');
+    // Fecha o menu se estiver aberto
+    menuSidebar.classList.remove('open');
+
+    // fechar pesquisa
+    const bar = document.getElementById('searchBar');
+    const isOpen = bar.classList.contains('hidden');
+
+    if (!isOpen) {
+        bar.classList.add('hidden');
+        menuSidebar.classList.remove('open');
+    }
+});
+
+
+// Ao clicar no ícone do menu
+document.querySelector('.menu img').addEventListener('click', () => {
+    menuSidebar.classList.add('open');
+    // Fecha o perfil se estiver aberto
+    sidebar.classList.remove('open');
+
+    // fechar mpesquisa
+    const bar = document.getElementById('searchBar');
+    const isOpen = bar.classList.contains('hidden');
+
+    if (!isOpen) {
+    bar.classList.add('hidden');
+    profileSidebar.classList.remove('open');
+}
+
 });
