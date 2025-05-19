@@ -40,6 +40,13 @@ function addMovieToList() {
         id: 9 // gera ou atribui o id correto
     };
 
+    const filmeExiste = favoritos[selectedList].some(f => f.id === filme.id);
+
+    if (filmeExiste) {
+        alert('Este filme já está na lista.');
+        return;
+    }
+
     favoritos[selectedList].push(filme);
     localStorage.setItem('favoritos', JSON.stringify(favoritos));
 
