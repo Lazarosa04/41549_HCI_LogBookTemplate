@@ -2,12 +2,10 @@
 
 ---
 
-
 # A. Stage 0 - Planning and Problem Identification
->	Here you will briefly explain the domain of the problem you identified, briefly identify general challenges and, then, state you problem
 O domínio do problema é o consumo de meios audiovisuais, nomeadamente filmes e séries.
-Pensamos em qual a melhor forma das pessoas usufruirem dos mesmos. 
-Reparamos que muitas das aplicações ou sites web que visam satisfazer o usuário não o fazem em todos os aspetos.
+Pensamos em qual a melhor forma das pessoas usufruirem dos mesmos sem terem de pagar ou acceder a diferentes plataformas. 
+Reparamos que muitas das aplicações ou sites web que visam satisfazer o utilizador não o fazem em todos os aspetos.
 
 # Context
 >   [What is the context for your work. What area of application. It can be travelling, pet treatment, shopping. State the overall context and why it is interesting to think about it.]

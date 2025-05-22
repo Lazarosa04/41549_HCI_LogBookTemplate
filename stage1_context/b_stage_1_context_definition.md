@@ -22,7 +22,6 @@
 
 
 ## B.1b. Detailed Competitor Analysis
->	Choose the most notable competitor and do a more thorough analysis of their interactive solution
 PobreTV fornece muitas funcionalidades presentes em muitos sites do estilo, como poder visualizar quais os conteudos disponíveis, butões para ações do utilizador mais usadas, diferentes opções para ver o mesmo video,
 etc. Um dos aspetos que nos chamou a atenção em particular é porque é muito utilizado por pessoas à volta de
 alguns dos membros da equipa e porque tem a opção de adiciona filmes aos favoritos sem ser necessária a criação duma conta. 

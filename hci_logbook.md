@@ -6,7 +6,7 @@ Work carried out by:
 -->
 # *HCI Project Logbook*
 
-**Title of the project**: [Title goes here]
+**Title of the project**: YourStream
 **Team:**
 - Student 1: [Carlos Verenzuela - 114597] 
 - Student 2; [Rúben Costa - 114190]
@@ -14,7 +14,8 @@ Work carried out by:
 
 ---
 # [A. Stage 0 - Planning and Problem Identification](stage0_planning/a_stage_0_planning_problem_identification.md)
- > 	This stage corresponds to week 1. Describe the overall rationale that leads to choosing the project idea
+- Personal Interest / Use. -> Todos os membros do grupo costumam utilizador sites ou apps para ver filmes/series e se deparam constantemente com a fragmentação do conteúdo audiovisual.
+- Is present in our society -> Não é um problema só nosso, mas presente na sociedade no geral.
 
 <!-- For this stage you will need to read this:-->
 
