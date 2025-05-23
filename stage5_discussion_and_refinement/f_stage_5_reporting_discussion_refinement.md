@@ -26,7 +26,7 @@ A avaliação do protótipo revelou que, embora as principais funcionalidades es
 - Mostrar os géneros ativos como etiquetas visuais (ex.: "Horror") na página de recomendações.
 
 # Refined Prototype
-
+[Ver screenshots](./screenshots/)
 
 ---
 [Back to main Logbook Page](../hci_logbook.md)
