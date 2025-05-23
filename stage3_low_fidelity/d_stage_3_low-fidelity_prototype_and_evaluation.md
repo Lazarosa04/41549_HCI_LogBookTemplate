@@ -9,9 +9,9 @@
 ## Changes considering tests to users:
 ### Favoritos Changes:
 
-Mudar o texto "Create List" para "List Name", para evitar confusões com um botão.,
-Colocar um contorno (caixa/quadrado) à volta de cada lista com os seus respetivos botões, para tornar a estrutura mais clara.,
-Ao selecionar uma lista, adicionar uma barra de pesquisa (útil para listas com muitos itens).,
+Mudar o texto "Create List" para "List Name", para evitar confusões com um botão.
+Colocar um contorno (caixa/quadrado) à volta de cada lista com os seus respetivos botões, para tornar a estrutura mais clara.
+Ao selecionar uma lista, adicionar uma barra de pesquisa (útil para listas com muitos itens).
 Ao carregar num filme/série/anime:
 Permitir criar nova lista diretamente (sem ter que ir às listas).
 Tornar mais intuitivo o botão de adicionar a uma lista:
@@ -26,11 +26,11 @@ O botão "Salvar" deve estar à direita, e o "Cancelar" à esquerda.
 
 ### Perfil Changes :
 
-Adicionar botões de "Salvar alterações" e "Cancelar".,
-Incluir um botão de "Sair".,
-Trocar o 'título' "Likes" por "Favorite Genres".,
-Colocar a opção "Logout" dentro de definições (em vez de estar dentro do perfil).,
-Ao fazer login, deve aparecer o nome do utilizador debaixo do ícone do perfil.,
+Adicionar botões de "Salvar alterações" e "Cancelar".
+Incluir um botão de "Sair".
+Trocar o 'título' "Likes" por "Favorite Genres".
+Colocar a opção "Logout" dentro de definições (em vez de estar dentro do perfil).
+Ao fazer login, deve aparecer o nome do utilizador debaixo do ícone do perfil.
 
 ### Layout Geral Changes :
 
