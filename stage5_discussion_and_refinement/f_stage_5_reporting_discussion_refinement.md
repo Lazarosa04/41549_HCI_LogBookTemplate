@@ -28,6 +28,9 @@ A avaliação do protótipo revelou que, embora as principais funcionalidades es
 # Refined Prototype
 [Ver screenshots](./screenshots/)
 
+# after and before
+[Ver Changes](./Changes/)
+
 ---
 [Back to main Logbook Page](../hci_logbook.md)
 
