@@ -20,6 +20,8 @@ O protótipo desenvolvido consiste numa aplicação de streaming com as seguinte
 
 # E.X. User Evaluation
 
+👉 Ver também a pasta: [Avaliações de Usabilidade](./Avaliacoes_de_Usabilidade/)
+
 1. A funcionalidade de adicionar géneros ao perfil não é consistente com o sistema de filtros da pesquisa. Sugestão: unificar o design/interação entre ambos.
 
 Em Recommendations, os géneros usados como filtro deviam ser visíveis (ex. etiqueta "Horror").
